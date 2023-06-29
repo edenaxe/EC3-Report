@@ -1,0 +1,1404 @@
+﻿L2 Code,Name,Level,Assembly
+00 00,Procurement and Contracting Requirements,Level 1,Other
+00 10,Solicitation,Level 2,Other
+00 11,Advertisements and Invitations,Level 2,Other
+00 20,Instructions for Procurement,Level 2,Other
+00 21,Instructions,Level 2,Other
+00 22,Supplementary Instructions,Level 2,Other
+00 23,Procurement Definitions,Level 2,Other
+00 24,Procurement Scopes,Level 2,Other
+00 25,Procurement Meetings,Level 2,Other
+00 26,Procurement Substitution Procedures,Level 2,Other
+00 30,Available Information,Level 2,Other
+00 31,Available Project Information,Level 2,Other
+00 40,Procurement Forms and Supplements,Level 2,Other
+00 41,Bid Forms,Level 2,Other
+00 42,Proposal Forms,Level 2,Other
+00 43,Procurement Form Supplements,Level 2,Other
+00 45,Representations and Certifications,Level 2,Other
+00 50,Contracting Forms and Supplements,Level 2,Other
+00 51,Notice of Award,Level 2,Other
+00 52,Agreement Forms,Level 2,Other
+00 54,Agreement Form Supplements,Level 2,Other
+00 55,Notice to Proceed,Level 2,Other
+00 60,Project Forms,Level 2,Other
+00 61,Bond Forms,Level 2,Other
+00 62,Certificates and Other Forms,Level 2,Other
+00 63,Clarification and Modification Forms,Level 2,Other
+00 65,Closeout Forms,Level 2,Other
+00 70,Conditions of the Contract,Level 2,Other
+00 71,Contracting Definitions,Level 2,Other
+00 72,General Conditions,Level 2,Other
+00 73,Supplementary Conditions,Level 2,Other
+00 80,Unassigned,Level 2,Other
+00 90,"Revisions, Clarifications, and Modifications",Level 2,Other
+00 91,Precontract Revisions,Level 2,Other
+00 93,Record Clarifications and Proposals,Level 2,Other
+00 94,Record Modifications,Level 2,Other
+01 00,General Requirements,Level 1,Other
+01 10,Summary,Level 2,Other
+01 11,Summary of Work,Level 2,Other
+01 12,Multiple Contract Summary,Level 2,Other
+01 14,Work Restrictions,Level 2,Other
+01 18,Project Utility Sources,Level 2,Other
+01 20,Price and Payment Procedures,Level 2,Other
+01 21,Allowances,Level 2,Other
+01 22,Unit Prices,Level 2,Other
+01 23,Alternates,Level 2,Other
+01 24,Value Analysis,Level 2,Other
+01 25,Substitution Procedures,Level 2,Other
+01 26,Contract Modification Procedures,Level 2,Other
+01 29,Payment Procedures,Level 2,Other
+01 30,Administrative Requirements,Level 2,Other
+01 31,Project Management and Coordination,Level 2,Other
+01 32,Construction Progress Documentation,Level 2,Other
+01 33,Submittal Procedures,Level 2,Other
+01 35,Special Procedures,Level 2,Other
+01 40,Quality Requirements,Level 2,Other
+01 41,Regulatory Requirements,Level 2,Other
+01 42,References,Level 2,Other
+01 43,Quality Assurance,Level 2,Other
+01 45,Quality Control,Level 2,Other
+01 50,Temporary Facilities and Controls,Level 2,Other
+01 51,Temporary Utilities,Level 2,Other
+01 52,Construction Facilities,Level 2,Other
+01 53,Temporary Construction,Level 2,Other
+01 54,Construction Aids,Level 2,Other
+01 55,Vehicular Access and Parking,Level 2,Other
+01 56,Temporary Barriers and Enclosures,Level 2,Other
+01 57,Temporary Controls,Level 2,Other
+01 58,Project Identification,Level 2,Other
+01 60,Product Requirements,Level 2,Other
+01 61,Common Product Requirements,Level 2,Other
+01 62,Product Options,Level 2,Other
+01 64,Owner-Furnished Products,Level 2,Other
+01 65,Product Delivery Requirements,Level 2,Other
+01 66,Product Storage and Handling Requirements,Level 2,Other
+01 70,Execution and Closeout Requirements,Level 2,Other
+01 71,Examination and Preparation,Level 2,Other
+01 73,Execution,Level 2,Other
+01 74,Cleaning and Waste Management,Level 2,Other
+01 75,Starting and Adjusting,Level 2,Other
+01 76,Protecting Installed Construction,Level 2,Other
+01 77,Closeout Procedures,Level 2,Other
+01 78,Closeout Submittals,Level 2,Other
+01 79,Demonstration and Training,Level 2,Other
+01 80,Performance Requirements,Level 2,Other
+01 81,Facility Performance Requirements,Level 2,Other
+01 82,Facility Substructure Performance Requirements,Level 2,Other
+01 83,Facility Shell Performance Requirements,Level 2,Other
+01 84,Interiors Performance Requirements,Level 2,Other
+01 85,Conveying Equipment Performance Requirements,Level 2,Other
+01 86,Facility Services Performance Requirements,Level 2,Other
+01 87,Equipment and Furnishings Performance Requirements,Level 2,Other
+01 88,Other Facility Construction Performance Requirements,Level 2,Other
+01 89,Site Construction Performance Requirements,Level 2,Other
+01 90,Life Cycle Activities,Level 2,Other
+01 91,Commissioning,Level 2,Other
+01 92,Facility Operation,Level 2,Other
+01 93,Facility Maintenance,Level 2,Other
+01 94,Facility Decommissioning,Level 2,Other
+02 00,Existing Conditions,Level 1,Other
+02 01,Maintenance of Existing Conditions,Level 2,Other
+02 05,Common Work Results for Existing Conditions,Level 2,Other
+02 06,Schedules for Existing Conditions,Level 2,Other
+02 08,Commissioning of Existing Conditions,Level 2,Other
+02 10,Unassigned,Level 2,Other
+02 20,Assessment,Level 2,Other
+02 21,Surveys,Level 2,Other
+02 22,Existing Conditions Assessment,Level 2,Other
+02 24,Environmental Assessment,Level 2,Other
+02 25,Existing Material Assessment,Level 2,Other
+02 26,Hazardous Material Assessment,Level 2,Other
+02 30,Subsurface Investigation,Level 2,Other
+02 31,Geophysical Investigations,Level 2,Other
+02 32,Geotechnical Investigations,Level 2,Other
+02 40,Demolition and Structure Moving,Level 2,Other
+02 41,Demolition,Level 2,Other
+02 42,Removal and Salvage of Construction Materials,Level 2,Other
+02 43,Structure Moving,Level 2,Other
+02 50,Site Remediation,Level 2,Other
+02 51,Physical Decontamination,Level 2,Other
+02 52,Chemical Decontamination,Level 2,Other
+02 53,Thermal Decontamination,Level 2,Other
+02 54,Biological Decontamination,Level 2,Other
+02 55,Remediation Soil Stabilization,Level 2,Other
+02 56,Site Containment,Level 2,Other
+02 57,Sinkhole Remediation,Level 2,Other
+02 58,Snow Control,Level 2,Other
+02 60,Contaminated Site Material Removal,Level 2,Other
+02 61,Removal and Disposal of Contaminated Soils,Level 2,Other
+02 62,Hazardous Waste Recovery Processes,Level 2,Other
+02 65,Underground Storage Tank Removal,Level 2,Other
+02 66,Landfill Construction and Storage,Level 2,Other
+02 70,Water Remediation,Level 2,Other
+02 71,Groundwater Treatment,Level 2,Other
+02 72,Water Decontamination,Level 2,Other
+02 80,Facility Remediation,Level 2,Other
+02 81,Transportation and Disposal of Hazardous Materials,Level 2,Other
+02 82,Asbestos Remediation,Level 2,Other
+02 83,Lead Remediation,Level 2,Other
+02 84,Polychlorinate Biphenyl Remediation,Level 2,Other
+02 85,Mold Remediation,Level 2,Other
+02 86,Hazardous Waste Drum Handling,Level 2,Other
+02 90,Unassigned,Level 2,Other
+03 00,Concrete,Level 1,Structure
+03 01,Maintenance of Concrete,Level 2,Structure
+03 05,Common Work Results for Concrete,Level 2,Structure
+03 06,Schedules for Concrete,Level 2,Structure
+03 08,Commissioning of Concrete,Level 2,Structure
+03 10,Concrete Forming and Accessories,Level 2,Structure
+03 11,Concrete Forming,Level 2,Structure
+03 15,Concrete Accessories,Level 2,Structure
+03 20,Concrete Reinforcing,Level 2,Structure
+03 21,Reinforcing Steel,Level 2,Structure
+03 22,Welded Wire Fabric Reinforcing,Level 2,Structure
+03 23,Stressing Tendons,Level 2,Structure
+03 24,Fibrous Reinforcing,Level 2,Structure
+03 30,Cast-in-Place Concrete,Level 2,Structure
+03 31,Structural Concrete,Level 2,Structure
+03 33,Architectural Concrete,Level 2,Structure
+03 34,Low Density Concrete,Level 2,Structure
+03 35,Concrete Finishing,Level 2,Structure
+03 37,Specialty Placed Concrete,Level 2,Structure
+03 38,Post-Tensioned Concrete,Level 2,Structure
+03 39,Concrete Curing,Level 2,Structure
+03 40,Precast Concrete,Level 2,Structure
+03 41,Precast Structural Concrete,Level 2,Structure
+03 45,Precast Architectural Concrete,Level 2,Structure
+03 47,Site-Cast Concrete,Level 2,Structure
+03 48,Precast Concrete Specialties,Level 2,Structure
+03 49,Glass-Fiber-Reinforced Concrete,Level 2,Structure
+03 50,Cast Decks and Underlayment,Level 2,Structure
+03 51,Cast Roof Decks,Level 2,Structure
+03 52,Lightweight Concrete Roof Insulation,Level 2,Structure
+03 53,Concrete Topping,Level 2,Structure
+03 54,Cast Underlayment,Level 2,Structure
+03 60,Grouting,Level 2,Structure
+03 61,Cementitious Grouting,Level 2,Structure
+03 62,Non-Shrink Grouting,Level 2,Structure
+03 63,Epoxy Grouting,Level 2,Structure
+03 64,Injection Grouting,Level 2,Structure
+03 70,Mass Concrete,Level 2,Structure
+03 71,Mass Concrete for Raft Foundations,Level 2,Structure
+03 72,Mass Concrete for Dams,Level 2,Structure
+03 80,Concrete Cutting and Boring,Level 2,Structure
+03 81,Concrete Cutting,Level 2,Structure
+03 82,Concrete Boring,Level 2,Structure
+03 90,Unassigned,Level 2,Structure
+04 00,Masonry,Level 1,Structure
+04 01,Maintenance of Masonry,Level 2,Structure
+04 05,Common Work Results for Masonry,Level 2,Structure
+04 06,Schedules for Masonry,Level 2,Structure
+04 08,Commissioning of Masonry,Level 2,Structure
+04 10,Unassigned,Level 2,Structure
+04 20,Unit Masonry,Level 2,Structure
+04 21,Clay Unit Masonry,Level 2,Structure
+04 22,Concrete Unit Masonry,Level 2,Structure
+04 23,Glass Unit Masonry,Level 2,Structure
+04 24,Adobe Unit Masonry,Level 2,Structure
+04 25,Unit Masonry Panels,Level 2,Structure
+04 27,Multiple-Wythe Unit Masonry,Level 2,Structure
+04 28,Concrete Form Masonry Units,Level 2,Structure
+04 30,Unassigned,Level 2,Structure
+04 40,Stone Assemblies,Level 2,Structure
+04 41,Dry-Placed Stone,Level 2,Structure
+04 42,Exterior Stone Cladding,Level 2,Structure
+04 43,Stone Masonry,Level 2,Structure
+04 50,Refractory Masonry,Level 2,Structure
+04 51,Flue Liner Masonry,Level 2,Structure
+04 52,Combustion Chamber Masonry,Level 2,Structure
+04 53,Castable Refractory Masonry,Level 2,Structure
+04 54,Refractory Brick Masonry,Level 2,Structure
+04 57,Masonry Fireplaces,Level 2,Structure
+04 60,Corrosion-Resistant Masonry,Level 2,Structure
+04 61,Chemical-Resistant Brick Masonry,Level 2,Structure
+04 62,Vitrified Clay Liner Plate,Level 2,Structure
+04 70,Manufactured Masonry,Level 2,Structure
+04 71,Manufactured Brick Masonry,Level 2,Structure
+04 72,Cast Stone Masonry,Level 2,Structure
+04 73,Manufactured Stone Masonry,Level 2,Structure
+04 80,Unassigned,Level 2,Structure
+04 90,Unassigned,Level 2,Structure
+05 00,Metals,Level 1,Structure
+05 01,Maintenance of Metals,Level 2,Structure
+05 05,Common Work Results for Metals,Level 2,Structure
+05 06,Schedules for Metals,Level 2,Structure
+05 08,Commissioning of Metals,Level 2,Structure
+05 10,Structural Metal Framing,Level 2,Structure
+05 12,Structural Steel Framing,Level 2,Structure
+05 13,Structural Stainless-Steel Framing,Level 2,Structure
+05 14,Structural Aluminum Framing,Level 2,Structure
+05 15,Wire Rope Assemblies,Level 2,Structure
+05 16,Structural Cabling,Level 2,Structure
+05 20,Metal Joists,Level 2,Structure
+05 21,Steel Joist Framing,Level 2,Structure
+05 25,Aluminum Joist Framing,Level 2,Structure
+05 30,Metal Decking,Level 2,Structure
+05 31,Steel Decking,Level 2,Structure
+05 33,Aluminum Decking,Level 2,Structure
+05 34,Acoustical Metal Decking,Level 2,Structure
+05 35,Raceway Decking Assemblies,Level 2,Structure
+05 36,Composite Metal Decking,Level 2,Structure
+05 40,Cold-Formed Metal Framing,Level 2,Structure
+05 41,Structural Metal Stud Framing,Level 2,Structure
+05 42,Cold-Formed Metal Joist Framing,Level 2,Structure
+05 43,Slotted Channel Framing,Level 2,Structure
+05 44,Cold-Formed Metal Trusses,Level 2,Structure
+05 45,Metal Support Assemblies,Level 2,Structure
+05 50,Metal Fabrications,Level 2,Structure
+05 51,Metal Stairs,Level 2,Structure
+05 52,Metal Railings,Level 2,Structure
+05 53,Metal Gratings,Level 2,Structure
+05 54,Metal Floor Plates,Level 2,Structure
+05 55,Metal Stair Treads and Nosings,Level 2,Structure
+05 56,Metal Castings,Level 2,Structure
+05 58,Formed Metal Fabrications,Level 2,Structure
+05 59,Metal Specialties,Level 2,Structure
+05 60,Unassigned,Level 2,Structure
+05 70,Decorative Metal,Level 2,Structure
+05 71,Decorative Metal Stairs,Level 2,Structure
+05 73,Decorative Metal Railings,Level 2,Structure
+05 74,Decorative Metal Castings,Level 2,Structure
+05 75,Decorative Formed Metal,Level 2,Structure
+05 76,Decorative Forged Metal,Level 2,Structure
+05 80,Unassigned,Level 2,Structure
+05 90,Unassigned,Level 2,Structure
+06 00,"Wood, Plastics, and Composites",Level 1,Structure
+06 01,"Maintenance of Wood, Plastics, and Composites",Level 2,Structure
+06 05,"Common Work Results for Wood, Plastics, and Composites",Level 2,Structure
+06 06,"Schedules for Wood, Plastics, and Composites",Level 2,Structure
+06 08,"Commissioning of Wood, Plastics, and Composites",Level 2,Structure
+06 10,Rough Carpentry,Level 2,Structure
+06 11,Wood Framing,Level 2,Structure
+06 12,Structural Panels,Level 2,Structure
+06 13,Heavy Timber,Level 2,Structure
+06 14,Treated Wood Foundations,Level 2,Structure
+06 15,Wood Decking,Level 2,Structure
+06 16,Sheathing,Level 2,Enclosure
+06 17,Shop-Fabricated Structural Wood,Level 2,Structure
+06 18,Glued-Laminated Construction,Level 2,Enclosure
+06 20,Finish Carpentry,Level 2,Enclosure
+06 22,Millwork,Level 2,Enclosure
+06 25,Prefinished Paneling,Level 2,Enclosure
+06 26,Board Paneling,Level 2,Enclosure
+06 30,Unassigned,Level 2,Enclosure
+06 40,Architectural Woodwork,Level 2,Enclosure
+06 41,Architectural Wood Casework,Level 2,Enclosure
+06 42,Wood Paneling,Level 2,Finishes
+06 43,Wood Stairs and Railings,Level 2,Enclosure
+06 44,Ornamental Woodwork,Level 2,Finishes
+06 46,Wood Trim,Level 2,Finishes
+06 48,Wood Frames,Level 2,Finishes
+06 49,Wood Screens and Exterior Wood Shutters,Level 2,Enclosure
+06 50,Structural Plastics,Level 2,Structure
+06 51,Structural Plastic Shapes and Plates,Level 2,Structure
+06 52,Plastic Structural Assemblies,Level 2,Structure
+06 53,Plastic Decking,Level 2,Structure
+06 60,Plastic Fabrications,Level 2,Structure
+06 61,Simulated Stone Fabrications,Level 2,Enclosure
+06 63,Plastic Railings,Level 2,Enclosure
+06 64,Plastic Paneling,Level 2,Enclosure
+06 65,Plastic Simulated Wood Trim,Level 2,Finishes
+06 66,Custom Ornamental Simulated Woodwork,Level 2,Finishes
+06 70,Structural Composites,Level 2,Structure
+06 71,Structural Composite Shapes and Plates,Level 2,Structure
+06 72,Composite Structural Assemblies,Level 2,Structure
+06 73,Composite Decking,Level 2,Structure
+06 80,Composite Fabrications,Level 2,Enclosure
+06 81,Composite Railings,Level 2,Enclosure
+06 82,Glass-Fiber-Reinforced Plastic,Level 2,Enclosure
+06 90,Unassigned,Level 2,Enclosure
+07 00,Thermal and Moisture Protection,Level 1,Enclosure
+07 01,Operation and Maintenance of Thermal and Moisture Protection,Level 2,Enclosure
+07 05,Common Work Results for Thermal and Moisture Protection,Level 2,Enclosure
+07 06,Schedules for Thermal and Moisture Protection,Level 2,Enclosure
+07 08,Commissioning of Thermal and Moisture Protection,Level 2,Enclosure
+07 10,Dampproofing and Waterproofing,Level 2,Enclosure
+07 11,Dampproofing,Level 2,Enclosure
+07 12,Built-Up Bituminous Waterproofing,Level 2,Enclosure
+07 13,Sheet Waterproofing,Level 2,Enclosure
+07 14,Fluid-Applied Waterproofing,Level 2,Enclosure
+07 15,Sheet Metal Waterproofing,Level 2,Enclosure
+07 16,Cementitious and Reactive Waterproofing,Level 2,Enclosure
+07 17,Bentonite Waterproofing,Level 2,Enclosure
+07 18,Traffic Coatings,Level 2,Enclosure
+07 19,Water Repellents,Level 2,Enclosure
+07 20,Thermal Protection,Level 2,Enclosure
+07 21,Thermal Insulation,Level 2,Enclosure
+07 22,Roof and Deck Insulation,Level 2,Enclosure
+07 24,Exterior Insulation and Finish Systems,Level 2,Enclosure
+07 25,Weather Barriers,Level 2,Enclosure
+07 26,Vapor Retarders,Level 2,Enclosure
+07 27,Air Barriers,Level 2,Enclosure
+07 30,Steep Slope Roofing,Level 2,Enclosure
+07 31,Shingles and Shakes,Level 2,Enclosure
+07 32,Roof Tiles,Level 2,Enclosure
+07 33,Natural Roof Coverings,Level 2,Enclosure
+07 40,Roofing and Siding Panels,Level 2,Enclosure
+07 41,Roof Panels,Level 2,Enclosure
+07 42,Wall Panels,Level 2,Enclosure
+07 44,Faced Panels,Level 2,Enclosure
+07 46,Siding,Level 2,Enclosure
+07 50,Membrane Roofing,Level 2,Enclosure
+07 51,Built-Up Bituminous Roofing,Level 2,Enclosure
+07 52,Modified Bituminous Membrane Roofing,Level 2,Enclosure
+07 53,Elastomeric Membrane Roofing,Level 2,Enclosure
+07 54,Thermoplastic Membrane Roofing,Level 2,Enclosure
+07 55,Protected Membrane Roofing,Level 2,Enclosure
+07 56,Fluid-Applied Roofing,Level 2,Enclosure
+07 57,Coated Foamed Roofing,Level 2,Enclosure
+07 58,Roll Roofing,Level 2,Enclosure
+07 60,Flashing and Sheet Metal,Level 2,Enclosure
+07 61,Sheet Metal Roofing,Level 2,Enclosure
+07 62,Sheet Metal Flashing and Trim,Level 2,Enclosure
+07 63,Sheet Metal Roofing Specialties,Level 2,Enclosure
+07 65,Flexible Flashing,Level 2,Enclosure
+07 70,Roof and Wall Specialties and Accessories,Level 2,Enclosure
+07 71,Roof Specialties,Level 2,Enclosure
+07 72,Roof Accessories,Level 2,Enclosure
+07 76,Roof Pavers,Level 2,Enclosure
+07 77,Wall Specialties,Level 2,Enclosure
+07 80,Fire and Smoke Protection,Level 2,Enclosure
+07 81,Applied Fireproofing,Level 2,Enclosure
+07 82,Board Fireproofing,Level 2,Enclosure
+07 84,Firestopping,Level 2,Enclosure
+07 86,Smoke Seals,Level 2,Enclosure
+07 87,Smoke Containment Barriers,Level 2,Enclosure
+07 90,Joint Protection,Level 2,Enclosure
+07 91,Preformed Joint Seals,Level 2,Enclosure
+07 92,Joint Sealants,Level 2,Enclosure
+07 95,Expansion Control,Level 2,Enclosure
+08 00,Openings,Level 1,Enclosure
+08 01,Operation and Maintenance of Openings,Level 2,Enclosure
+08 05,Common Work Results for Openings,Level 2,Enclosure
+08 06,Schedules for Openings,Level 2,Enclosure
+08 08,Commissioning of Openings,Level 2,Enclosure
+08 10,Doors and Frames,Level 2,Enclosure
+08 11,Metal Doors and Frames,Level 2,Enclosure
+08 12,Metal Frames,Level 2,Enclosure
+08 13,Metal Doors,Level 2,Enclosure
+08 14,Wood Doors,Level 2,Enclosure
+08 15,Plastic Doors,Level 2,Enclosure
+08 16,Composite Doors,Level 2,Enclosure
+08 17,Integrated Door Opening Assemblies,Level 2,Enclosure
+08 20,Unassigned,Level 2,Enclosure
+08 30,Specialty Doors and Frames,Level 2,Enclosure
+08 31,Access Doors and Panels,Level 2,Enclosure
+08 32,Sliding Glass Doors,Level 2,Enclosure
+08 33,Coiling Doors and Grilles,Level 2,Enclosure
+08 34,Special Function Doors,Level 2,Enclosure
+08 35,Folding Doors and Grilles,Level 2,Enclosure
+08 36,Panel Doors,Level 2,Enclosure
+08 38,Traffic Doors,Level 2,Enclosure
+08 39,Pressure-Resistant Doors,Level 2,Enclosure
+08 40,"Entrances, Storefronts, and Curtain Walls",Level 2,Enclosure
+08 41,Entrances and Storefronts,Level 2,Enclosure
+08 42,Entrances,Level 2,Enclosure
+08 43,Storefronts,Level 2,Enclosure
+08 44,Curtain Wall and Glazed Assemblies,Level 2,Enclosure
+08 45,Translucent Wall and Roof Assemblies,Level 2,Enclosure
+08 50,Windows,Level 2,Enclosure
+08 51,Metal Windows,Level 2,Enclosure
+08 52,Wood Windows,Level 2,Enclosure
+08 53,Plastic Windows,Level 2,Enclosure
+08 54,Composite Windows,Level 2,Enclosure
+08 55,Pressure-Resistant Windows,Level 2,Enclosure
+08 56,Special Function Windows,Level 2,Enclosure
+08 60,Roof Windows and Skylights,Level 2,Enclosure
+08 61,Roof Windows,Level 2,Enclosure
+08 62,Unit Skylights,Level 2,Enclosure
+08 63,Metal-Framed Skylights,Level 2,Enclosure
+08 64,Plastic-Framed Skylights,Level 2,Enclosure
+08 67,Skylight Protection and Screens,Level 2,Enclosure
+08 70,Hardware,Level 2,Enclosure
+08 71,Door Hardware,Level 2,Enclosure
+08 74,Access Control Hardware,Level 2,Enclosure
+08 75,Window Hardware,Level 2,Enclosure
+08 78,Special Function Hardware,Level 2,Enclosure
+08 79,Hardware Accessories,Level 2,Enclosure
+08 80,Glazing,Level 2,Enclosure
+08 81,Glass Glazing,Level 2,Enclosure
+08 83,Mirrors,Level 2,Enclosure
+08 84,Plastic Glazing,Level 2,Enclosure
+08 85,Glazing Accessories,Level 2,Enclosure
+08 87,Glazing Surface Films,Level 2,Enclosure
+08 88,Special Function Glazing,Level 2,Enclosure
+08 90,Louvers and Vents,Level 2,Enclosure
+08 91,Louvers,Level 2,Enclosure
+08 92,Louvered Equipment Enclosures,Level 2,Enclosure
+08 95,Vents,Level 2,Enclosure
+09 00,Finishes,Level 1,Finishes
+09 01,Maintenance of Finishes,Level 2,Finishes
+09 05,Common Work Results for Finishes,Level 2,Finishes
+09 06,Schedules for Finishes,Level 2,Finishes
+09 08,Commissioning of Finishes,Level 2,Finishes
+09 10,Unassigned,Level 2,Finishes
+09 20,Plaster and Gypsum Board,Level 2,Finishes
+09 21,Plaster and Gypsum Board Assemblies,Level 2,Finishes
+09 22,Supports for Plaster and Gypsum Board,Level 2,Finishes
+09 23,Gypsum Plastering,Level 2,Finishes
+09 24,Portland Cement Plastering,Level 2,Finishes
+09 25,Other Plastering,Level 2,Finishes
+09 26,Veneer Plastering,Level 2,Finishes
+09 27,Plaster Fabrications,Level 2,Finishes
+09 28,Backing Boards and Underlayments,Level 2,Finishes
+09 29,Gypsum Board,Level 2,Finishes
+09 30,Tiling,Level 2,Finishes
+09 31,Thin-Set Tiling,Level 2,Finishes
+09 32,Mortar-Bed Tiling,Level 2,Finishes
+09 33,Conductive Tiling,Level 2,Finishes
+09 34,Waterproofing-Membrane Tiling,Level 2,Finishes
+09 35,Chemical-Resistant Tiling,Level 2,Finishes
+09 40,Unassigned,Level 2,Finishes
+09 50,Ceilings,Level 2,Finishes
+09 51,Acoustical Ceilings,Level 2,Finishes
+09 53,Acoustical Ceiling Suspension Assemblies,Level 2,Finishes
+09 54,Specialty Ceilings,Level 2,Finishes
+09 56,Textured Ceilings,Level 2,Finishes
+09 57,Special Function Ceilings,Level 2,Finishes
+09 58,Integrated Ceiling Assemblies,Level 2,Finishes
+09 60,Flooring,Level 2,Finishes
+09 61,Flooring Treatment,Level 2,Finishes
+09 62,Specialty Flooring,Level 2,Finishes
+09 63,Masonry Flooring,Level 2,Finishes
+09 64,Wood Flooring,Level 2,Finishes
+09 65,Resilient Flooring,Level 2,Finishes
+09 66,Terrazzo Flooring,Level 2,Finishes
+09 67,Fluid-Applied Flooring,Level 2,Finishes
+09 68,Carpeting,Level 2,Finishes
+09 69,Access Flooring,Level 2,Finishes
+09 70,Wall Finishes,Level 2,Finishes
+09 72,Wall Coverings,Level 2,Finishes
+09 73,Wall Carpeting,Level 2,Finishes
+09 74,Flexible Wood Sheets,Level 2,Finishes
+09 75,Stone Facing,Level 2,Finishes
+09 76,Plastic Blocks,Level 2,Finishes
+09 77,Special Wall Surfacing,Level 2,Finishes
+09 80,Acoustic Treatment,Level 2,Finishes
+09 81,Acoustic Insulation,Level 2,Finishes
+09 83,Acoustic Finishes,Level 2,Finishes
+09 84,Acoustic Room Components,Level 2,Finishes
+09 90,Painting and Coating,Level 2,Finishes
+09 91,Painting,Level 2,Finishes
+09 93,Staining and Transparent Finishing,Level 2,Finishes
+09 94,Decorative Finishing,Level 2,Finishes
+09 96,High-Performance Coatings,Level 2,Finishes
+09 97,Special Coatings,Level 2,Finishes
+10 00,Specialties,Level 1,Finishes
+10 01,Operation and Maintenance of Specialties,Level 2,Finishes
+10 05,Common Work Results for Specialties,Level 2,Finishes
+10 06,Schedules for Specialties,Level 2,Finishes
+10 08,Commissioning of Specialties,Level 2,Finishes
+10 10,Information Specialties,Level 2,Finishes
+10 11,Visual Display Surfaces,Level 2,Finishes
+10 12,Display Cases,Level 2,Finishes
+10 13,Directories,Level 2,Finishes
+10 14,Signage,Level 2,Finishes
+10 17,Telephone Specialties,Level 2,Finishes
+10 18,Informational Kiosks,Level 2,Finishes
+10 20,Interior Specialties,Level 2,Finishes
+10 21,Compartments and Cubicles,Level 2,Finishes
+10 22,Partitions,Level 2,Finishes
+10 25,Service Walls,Level 2,Finishes
+10 26,Wall and Door Protection,Level 2,Finishes
+10 28,"Toilet, Bath, and Laundry Accessories",Level 2,Finishes
+10 30,Fireplaces and Stoves,Level 2,Finishes
+10 31,Manufactured Fireplaces,Level 2,Finishes
+10 32,Fireplace Specialties,Level 2,Finishes
+10 35,Stoves,Level 2,Finishes
+10 40,Safety Specialties,Level 2,Finishes
+10 41,Emergency Access and Information Cabinets,Level 2,Finishes
+10 43,Emergency Aid Specialties,Level 2,Finishes
+10 44,Fire Protection Specialties,Level 2,Finishes
+10 50,Storage Specialties,Level 2,Finishes
+10 51,Lockers,Level 2,Finishes
+10 55,Postal Specialties,Level 2,Finishes
+10 56,Storage Assemblies,Level 2,Finishes
+10 57,Wardrobe and Closet Specialties,Level 2,Finishes
+10 60,Unassigned,Level 2,Finishes
+10 70,Exterior Specialties,Level 2,Finishes
+10 71,Exterior Protection,Level 2,Finishes
+10 73,Protective Covers,Level 2,Finishes
+10 74,Manufactured Exterior Specialties,Level 2,Finishes
+10 75,Flagpoles,Level 2,Finishes
+10 80,Other Specialties,Level 2,Finishes
+10 81,Pest Control Devices,Level 2,Finishes
+10 82,Grilles and Screens,Level 2,Finishes
+10 83,Flags and Banners,Level 2,Finishes
+10 86,Security Mirrors and Domes,Level 2,Finishes
+10 88,Scales,Level 2,Finishes
+10 90,Unassigned,Level 2,Finishes
+11 00,Equipment,Level 1,Other
+11 01,Operation and Maintenance of Equipment,Level 2,Other
+11 05,Common Work Results for Equipment,Level 2,Other
+11 06,Schedules for Equipment,Level 2,Other
+11 08,Commissioning of Equipment,Level 2,Other
+11 10,Vehicle and Pedestrian Equipment,Level 2,Other
+11 11,Vehicle Service Equipment,Level 2,Other
+11 12,Parking Control Equipment,Level 2,Other
+11 13,Loading Dock Equipment,Level 2,Other
+11 14,Pedestrian Control Equipment,Level 2,Other
+11 15,"Security, Detention and Banking Equipment",Level 2,Other
+11 16,Vault Equipment,Level 2,Other
+11 17,Teller and Service Equipment,Level 2,Other
+11 18,Security Equipment,Level 2,Other
+11 19,Detention Equipment,Level 2,Other
+11 20,Commercial Equipment,Level 2,Other
+11 21,Mercantile and Service Equipment,Level 2,Other
+11 22,Refrigerated Display Equipment,Level 2,Other
+11 23,Commercial Laundry and Dry Cleaning Equipment,Level 2,Other
+11 24,Maintenance Equipment,Level 2,Other
+11 25,Hospitality Equipment,Level 2,Other
+11 26,Unit Kitchens,Level 2,Other
+11 27,Photographic Processing Equipment,Level 2,Other
+11 28,Office Equipment,Level 2,Other
+11 29,"Postal, Packaging, and Shipping Equipment",Level 2,Other
+11 30,Residential Equipment,Level 2,Other
+11 31,Residential Appliances,Level 2,Other
+11 33,Retractable Stairs,Level 2,Other
+11 40,Foodservice Equipment,Level 2,Other
+11 41,Food Storage Equipment,Level 2,Other
+11 42,Food Preparation Equipment,Level 2,Other
+11 43,Food Delivery Carts and Conveyors,Level 2,Other
+11 44,Food Cooking Equipment,Level 2,Other
+11 46,Food Dispensing Equipment,Level 2,Other
+11 47,Ice Machines,Level 2,Other
+11 48,Cleaning and Disposal Equipment,Level 2,Other
+11 50,Educational and Scientific Equipment,Level 2,Other
+11 51,Library Equipment,Level 2,Other
+11 52,Audio-Visual Equipment,Level 2,Other
+11 53,Laboratory Equipment,Level 2,Other
+11 55,Planetarium Equipment,Level 2,Other
+11 56,Observatory Equipment,Level 2,Other
+11 57,Vocational Shop Equipment,Level 2,Other
+11 59,Exhibit Equipment,Level 2,Other
+11 60,Entertainment Equipment,Level 2,Other
+11 61,Theater and Stage Equipment,Level 2,Other
+11 62,Musical Equipment,Level 2,Other
+11 65,Athletic and Recreational Equipment,Level 2,Other
+11 66,Athletic Equipment,Level 2,Other
+11 67,Recreational Equipment,Level 2,Other
+11 68,Play Field Equipment and Structures,Level 2,Other
+11 70,Healthcare Equipment,Level 2,Other
+11 71,Medical Sterilizing Equipment,Level 2,Other
+11 72,Examination and Treatment Equipment,Level 2,Other
+11 73,Patient Care Equipment,Level 2,Other
+11 74,Dental Equipment,Level 2,Other
+11 75,Optical Equipment,Level 2,Other
+11 76,Operating Room Equipment,Level 2,Other
+11 77,Radiology Equipment,Level 2,Other
+11 78,Mortuary Equipment,Level 2,Other
+11 79,Therapy Equipment,Level 2,Other
+11 80,Collection and Disposal Equipment,Level 2,Other
+11 82,Solid Waste Handling Equipment,Level 2,Other
+11 90,Other Equipment,Level 2,Other
+11 91,Religious Equipment,Level 2,Other
+11 92,Agricultural Equipment,Level 2,Other
+11 93,Horticultural Equipment,Level 2,Other
+12 00,Furnishings,Level 1,Other
+12 01,Operation and Maintenance of Furnishings,Level 2,Other
+12 05,Common Work Results for Furnishings,Level 2,Other
+12 06,Schedules for Furnishings,Level 2,Other
+12 08,Commissioning of Furnishings,Level 2,Other
+12 10,Art,Level 2,Other
+12 11,Murals,Level 2,Other
+12 12,Wall Decorations,Level 2,Other
+12 14,Sculptures,Level 2,Other
+12 17,Art Glass,Level 2,Other
+12 19,Religious Art,Level 2,Other
+12 20,Window Treatments,Level 2,Other
+12 21,Window Blinds,Level 2,Other
+12 22,Curtains and Drapes,Level 2,Other
+12 23,Interior Shutters,Level 2,Other
+12 24,Window Shades,Level 2,Other
+12 25,Window Treatment Operating Hardware,Level 2,Other
+12 30,Casework,Level 2,Other
+12 31,Manufactured Metal Casework,Level 2,Other
+12 32,Manufactured Wood Casework,Level 2,Other
+12 34,Manufactured Plastic Casework,Level 2,Other
+12 35,Specialty Casework,Level 2,Other
+12 36,Countertops,Level 2,Other
+12 40,Furnishings and Accessories,Level 2,Other
+12 41,Office Accessories,Level 2,Other
+12 42,Table Accessories,Level 2,Other
+12 43,Portable Lamps,Level 2,Other
+12 44,Bath Furnishings,Level 2,Other
+12 45,Bedroom Furnishings,Level 2,Other
+12 46,Furnishing Accessories,Level 2,Other
+12 48,Rugs and Mats,Level 2,Other
+12 50,Furniture,Level 2,Other
+12 51,Office Furniture,Level 2,Other
+12 52,Seating,Level 2,Other
+12 53,Retail Furniture,Level 2,Other
+12 54,Hospitality Furniture,Level 2,Other
+12 55,Detention Furniture,Level 2,Other
+12 56,Institutional Furniture,Level 2,Other
+12 57,Industrial Furniture,Level 2,Other
+12 58,Residential Furniture,Level 2,Other
+12 59,Systems Furniture,Level 2,Other
+12 60,Multiple Seating,Level 2,Other
+12 61,Fixed Audience Seating,Level 2,Other
+12 62,Portable Audience Seating,Level 2,Other
+12 63,Stadium and Arena Seating,Level 2,Other
+12 64,Booths and Tables,Level 2,Other
+12 65,Multiple-Use Fixed Seating,Level 2,Other
+12 66,Telescoping Stands,Level 2,Other
+12 67,Pews and Benches,Level 2,Other
+12 68,Seat and Table Assemblies,Level 2,Other
+12 70,Unassigned,Level 2,Other
+12 80,Unassigned,Level 2,Other
+12 90,Other Furnishings,Level 2,Other
+12 92,Interior Planters and Artificial Plants,Level 2,Other
+12 93,Site Furnishings,Level 2,Other
+13 00,Special Construction,Level 1,Other
+13 01,Operation and Maintenance of Special Construction,Level 2,Other
+13 05,Common Work Results for Special Construction,Level 2,Other
+13 06,Schedules for Special Construction,Level 2,Other
+13 08,Commissioning of Special Construction,Level 2,Other
+13 10,Special Facility Components,Level 2,Other
+13 11,Swimming Pools,Level 2,Other
+13 12,Fountains,Level 2,Other
+13 13,Aquariums,Level 2,Other
+13 14,Amusement Park Structures and Equipment,Level 2,Other
+13 17,Tubs and Pools,Level 2,Other
+13 18,Ice Rinks,Level 2,Other
+13 19,Kennels and Animal Shelters,Level 2,Other
+13 20,Special Purpose Rooms,Level 2,Other
+13 21,Controlled Environment Rooms,Level 2,Other
+13 22,Office Shelters and Booths,Level 2,Other
+13 23,Planetariums,Level 2,Other
+13 24,Special Activity Rooms,Level 2,Other
+13 26,Fabricated Rooms,Level 2,Other
+13 27,Vaults,Level 2,Other
+13 28,Athletic and Recreational Special Construction,Level 2,Other
+13 30,Special Structures,Level 2,Other
+13 31,Fabric Structures,Level 2,Other
+13 32,Space Frames,Level 2,Other
+13 33,Geodesic Structures,Level 2,Other
+13 34,Fabricated Engineered Structures,Level 2,Other
+13 36,Towers,Level 2,Other
+13 40,Integrated Construction,Level 2,Other
+13 42,Building Modules,Level 2,Other
+13 44,Modular Mezzanines,Level 2,Other
+13 48,"Sound, Vibration, and Seismic Control",Level 2,Other
+13 49,Radiation Protection,Level 2,Other
+13 50,Special Instrumentation,Level 2,Other
+13 51,Stress Instrumentation,Level 2,Other
+13 52,Seismic Instrumentation,Level 2,Other
+13 53,Meteorological Instrumentation,Level 2,Other
+13 60,Unassigned,Level 2,Other
+13 70,Unassigned,Level 2,Other
+13 80,Unassigned,Level 2,Other
+13 90,Unassigned,Level 2,Other
+14 00,Conveying Equipment,Level 1,Other
+14 01,Operation and Maintenance of Conveying Equipment,Level 2,Other
+14 05,Common Work Results for Conveying Equipment,Level 2,Other
+14 06,Schedules for Conveying Equipment,Level 2,Other
+14 08,Commissioning of Conveying Equipment,Level 2,Other
+14 10,Dumbwaiters,Level 2,Other
+14 11,Manual Dumbwaiters,Level 2,Other
+14 12,Electric Dumbwaiters,Level 2,Other
+14 14,Hydraulic Dumbwaiters,Level 2,Other
+14 20,Elevators,Level 2,Other
+14 21,Electric Traction Elevators,Level 2,Other
+14 24,Hydraulic Elevators,Level 2,Other
+14 26,Limited-Use/Limited-Application Elevators,Level 2,Other
+14 27,Custom Elevator Cabs,Level 2,Other
+14 28,Elevator Equipment and Controls,Level 2,Other
+14 30,Escalators and Moving Walks,Level 2,Other
+14 31,Escalators,Level 2,Other
+14 32,Moving Walks,Level 2,Other
+14 33,Moving Ramps,Level 2,Other
+14 40,Lifts,Level 2,Other
+14 41,People Lifts,Level 2,Other
+14 42,Wheelchair Lifts,Level 2,Other
+14 43,Platform Lifts,Level 2,Other
+14 44,Sidewalk Lifts,Level 2,Other
+14 45,Vehicle Lifts,Level 2,Other
+14 50,Unassigned,Level 2,Other
+14 60,Unassigned,Level 2,Other
+14 70,Turntables,Level 2,Other
+14 71,Industrial Turntables,Level 2,Other
+14 72,Hospitality Turntables,Level 2,Other
+14 73,Exhibit Turntables,Level 2,Other
+14 74,Entertainment Turntables,Level 2,Other
+14 80,Scaffolding,Level 2,Other
+14 81,Suspended Scaffolding,Level 2,Other
+14 82,Rope Climbers,Level 2,Other
+14 83,Elevating Platforms,Level 2,Other
+14 84,Powered Scaffolding,Level 2,Other
+14 90,Other Conveying Equipment,Level 2,Other
+14 91,Facility Chutes,Level 2,Other
+14 92,Pneumatic Tube Systems,Level 2,Other
+21 00,Fire Suppression,Level 1,Other
+21 01,Operation and Maintenance of Fire Suppression,Level 2,Other
+21 05,Common Work Results for Fire Suppression,Level 2,Other
+21 06,Schedules for Fire Suppression,Level 2,Other
+21 07,Fire Suppression Systems Insulation,Level 2,Other
+21 08,Commissioning of Fire Suppression,Level 2,Other
+21 09,Instrumentation and Control for Fire-Suppression Systems,Level 2,Other
+21 10,Water-Based Fire-Suppression Systems,Level 2,Other
+21 11,Facility Fire-Suppression Water-Service Piping,Level 2,Other
+21 12,Fire-Suppression Standpipes,Level 2,Other
+21 13,Fire-Suppression Sprinkler Systems,Level 2,Other
+21 20,Fire-Extinguishing Systems,Level 2,Other
+21 21,Carbon-Dioxide Fire-Extinguishing Systems,Level 2,Other
+21 22,Clean-Agent Fire-Extinguishing Systems,Level 2,Other
+21 23,Wet-Chemical Fire-Extinguishing Systems,Level 2,Other
+21 24,Dry-Chemical Fire-Extinguishing Systems,Level 2,Other
+21 30,Fire Pumps,Level 2,Other
+21 31,Centrifugal Fire Pumps,Level 2,Other
+21 32,Vertical-Turbine Fire Pumps,Level 2,Other
+21 33,Positive-Displacement Fire Pumps,Level 2,Other
+21 40,Fire-Suppression Water Storage,Level 2,Other
+21 41,Storage Tanks for Fire-Suppression Water,Level 2,Other
+21 50,Unassigned,Level 2,Other
+21 60,Unassigned,Level 2,Other
+21 70,Unassigned,Level 2,Other
+21 80,Unassigned,Level 2,Other
+21 90,Unassigned,Level 2,Other
+22 00,Plumbing,Level 1,Other
+22 01,Operation and Maintenance of Plumbing,Level 2,Other
+22 05,Common Work Results for Plumbing,Level 2,Other
+22 06,Schedules for Plumbing,Level 2,Other
+22 07,Plumbing Insulation,Level 2,Other
+22 08,Commissioning of Plumbing,Level 2,Other
+22 09,Instrumentation and Control for Plumbing,Level 2,Other
+22 10,Plumbing Piping and Pumps,Level 2,Other
+22 11,Facility Water Distribution,Level 2,Other
+22 12,Facility Potable-Water Storage Tanks,Level 2,Other
+22 13,Facility Sanitary Sewerage,Level 2,Other
+22 14,Facility Storm Drainage,Level 2,Other
+22 15,General Service Compressed-Air Systems,Level 2,Other
+22 20,Unassigned,Level 2,Other
+22 30,Plumbing Equipment,Level 2,Other
+22 31,Domestic Water Softeners,Level 2,Other
+22 32,Domestic Water Filtration Equipment,Level 2,Other
+22 33,Electric Domestic Water Heaters,Level 2,Other
+22 34,Fuel-Fired Domestic Water Heaters,Level 2,Other
+22 35,Domestic Water Heat Exchangers,Level 2,Other
+22 40,Plumbing Fixtures,Level 2,Other
+22 41,Residential Plumbing Fixtures,Level 2,Other
+22 42,Commercial Plumbing Fixtures,Level 2,Other
+22 43,Healthcare Plumbing Fixtures,Level 2,Other
+22 45,Emergency Plumbing Fixtures,Level 2,Other
+22 46,Security Plumbing Fixtures,Level 2,Other
+22 47,Drinking Fountains and Water Coolers,Level 2,Other
+22 50,Pool and Fountain Plumbing Systems,Level 2,Other
+22 51,Swimming Pool Plumbing Systems,Level 2,Other
+22 52,Fountain Plumbing Systems,Level 2,Other
+22 60,Gas and Vacuum Systems for Laboratory and Healthcare Facilities,Level 2,Other
+22 61,Compressed-Air Systems for Laboratory and Healthcare Facilities,Level 2,Other
+22 62,Vacuum Systems for Laboratory and Healthcare Facilities,Level 2,Other
+22 63,Gas Systems for Laboratory and Healthcare Facilities,Level 2,Other
+22 66,Chemical-Waste Systems for Laboratory and Healthcare Facilities,Level 2,Other
+22 67,Processed Water Systems for Laboratory and Healthcare Facilities,Level 2,Other
+22 70,Unassigned,Level 2,Other
+22 80,Unassigned,Level 2,Other
+22 90,Unassigned,Level 2,Other
+23 00,"Heating, Ventilating, and Air-Conditioning (HVAC)",Level 1,Other
+23 01,Operation and Maintenance of HVAC Systems,Level 2,Other
+23 05,Common Work Results for HVAC,Level 2,Other
+23 06,Schedules for HVAC,Level 2,Other
+23 07,HVAC Insulation,Level 2,Other
+23 08,Commissioning of HVAC,Level 2,Other
+23 09,Instrumentation and Control for HVAC,Level 2,Other
+23 10,Facility Fuel Systems,Level 2,Other
+23 11,Facility Fuel Piping,Level 2,Other
+23 12,Facility Fuel Pumps,Level 2,Other
+23 13,Facility Fuel-Storage Tanks,Level 2,Other
+23 20,HVAC Piping and Pumps,Level 2,Other
+23 21,Hydronic Piping and Pumps,Level 2,Other
+23 22,Steam and Condensate Piping and Pumps,Level 2,Other
+23 23,Refrigerant Piping,Level 2,Other
+23 24,Internal-Combustion Engine Piping,Level 2,Other
+23 25,HVAC Water Treatment,Level 2,Other
+23 30,HVAC Air Distribution,Level 2,Other
+23 31,HVAC Ducts and Casings,Level 2,Other
+23 32,Air Plenums and Chases,Level 2,Other
+23 33,Air Duct Accessories,Level 2,Other
+23 34,HVAC Fans,Level 2,Other
+23 35,Special Exhaust Systems,Level 2,Other
+23 36,Air Terminal Units,Level 2,Other
+23 37,Air Outlets and Inlets,Level 2,Other
+23 38,Ventilation Hoods,Level 2,Other
+23 40,HVAC Air Cleaning Devices,Level 2,Other
+23 41,Particulate Air Filtration,Level 2,Other
+23 42,Gas-Phase Air Filtration,Level 2,Other
+23 43,Electronic Air Cleaners,Level 2,Other
+23 50,Central Heating Equipment,Level 2,Other
+23 51,"Breechings, Chimneys, and Stacks",Level 2,Other
+23 52,Heating Boilers,Level 2,Other
+23 53,Heating Boiler Feedwater Equipment,Level 2,Other
+23 54,Furnaces,Level 2,Other
+23 55,Fuel-Fired Heaters,Level 2,Other
+23 56,Solar Energy Heating Equipment,Level 2,Other
+23 57,Heat Exchangers for HVAC,Level 2,Other
+23 60,Central Cooling Equipment,Level 2,Other
+23 61,Refrigerant Compressors,Level 2,Other
+23 62,Packaged Compressor and Condenser Units,Level 2,Other
+23 63,Refrigerant Condensers,Level 2,Other
+23 64,Packaged Water Chillers,Level 2,Other
+23 65,Cooling Towers,Level 2,Other
+23 70,Central HVAC Equipment,Level 2,Other
+23 71,Thermal Storage,Level 2,Other
+23 72,Air-to-Air Energy Recovery Equipment,Level 2,Other
+23 73,Indoor Central-Station Air-Handling Units,Level 2,Other
+23 74,Packaged Outdoor HVAC Equipment,Level 2,Other
+23 75,Custom-Packaged Outdoor HVAC Equipment,Level 2,Other
+23 76,Evaporative Air-Cooling Equipment,Level 2,Other
+23 80,Decentralized HVAC Equipment,Level 2,Other
+23 81,Decentralized Unitary HVAC Equipment,Level 2,Other
+23 82,Convection Heating and Cooling Units,Level 2,Other
+23 83,Radiant Heating Units,Level 2,Other
+23 84,Humidity Control Equipment,Level 2,Other
+23 90,Unassigned,Level 2,Other
+25 00,Integrated Automation,Level 1,Other
+25 01,Operation and Maintenance of Integrated Automation,Level 2,Other
+25 05,Common Work Results for Integrated Automation,Level 2,Other
+25 06,Schedules for Integrated Automation,Level 2,Other
+25 08,Commissioning of Integrated Automation,Level 2,Other
+25 10,Integrated Automation Network Equipment,Level 2,Other
+25 11,Integrated Automation Network Devices,Level 2,Other
+25 12,Integrated Automation Network Gateways,Level 2,Other
+25 13,Integrated Automation Control and Monitoring Network,Level 2,Other
+25 14,Integrated Automation Local Control Units,Level 2,Other
+25 15,Integrated Automation Software,Level 2,Other
+25 20,Unassigned,Level 2,Other
+25 30,Integrated Automation Instrumentation and Terminal Devices,Level 2,Other
+25 31,Integrated Automation Instrumentation and Terminal Devices for Facility Equipment,Level 2,Other
+25 32,Integrated Automation Instrumentation and Terminal Devices for Conveying Equipment,Level 2,Other
+25 33,Integrated Automation Instrumentation and Terminal Devices for Fire-Suppression Systems,Level 2,Other
+25 34,Integrated Automation Instrumentation and Terminal Devices for Plumbing,Level 2,Other
+25 35,Integrated Automation Instrumentation and Terminal Devices for HVAC,Level 2,Other
+25 36,Integrated Automation Instrumentation and Terminal Devices for Electrical Systems,Level 2,Other
+25 37,Integrated Automation Instrumentation and Terminal Devices for Communications Systems,Level 2,Other
+25 38,Integrated Automation Instrumentation and Terminal Devices for Electronic Safety and Security Systems,Level 2,Other
+25 40,Unassigned,Level 2,Other
+25 50,Integrated Automation Facility Controls,Level 2,Other
+25 51,Integrated Automation Control of Facility Equipment,Level 2,Other
+25 52,Integrated Automation Control of Conveying Equipment,Level 2,Other
+25 53,Integrated Automation Control of Fire-Suppression Systems,Level 2,Other
+25 54,Integrated Automation Control of Plumbing,Level 2,Other
+25 55,Integrated Automation Control of HVAC,Level 2,Other
+25 56,Integrated Automation Control of Electrical Systems,Level 2,Other
+25 57,Integrated Automation Control of Communications Systems,Level 2,Other
+25 58,Integrated Automation Control of Electronic Safety and Security Systems,Level 2,Other
+25 60,Unassigned,Level 2,Other
+25 70,Unassigned,Level 2,Other
+25 80,Unassigned,Level 2,Other
+25 90,Integrated Automation Control Sequences,Level 2,Other
+25 91,Integrated Automation Control Sequences for Facility Equipment,Level 2,Other
+25 92,Integrated Automation Control Sequences for Conveying Equipment,Level 2,Other
+25 93,Integrated Automation Control Sequences for Fire-Suppression Systems,Level 2,Other
+25 94,Integrated Automation Control Sequences for Plumbing,Level 2,Other
+25 95,Integrated Automation Control Sequences for HVAC,Level 2,Other
+25 96,Integrated Automation Control Sequences for Electrical Systems,Level 2,Other
+25 97,Integrated Automation Control Sequences for Communications Systems,Level 2,Other
+25 98,Integrated Automation Control Sequences for Electronic Safety and Security Systems,Level 2,Other
+26 00,Electrical,Level 1,Other
+26 01,Operation and Maintenance of Electrical Systems,Level 2,Other
+26 05,Common Work Results for Electrical,Level 2,Other
+26 06,Schedules for Electrical,Level 2,Other
+26 08,Commissioning of Electrical Systems,Level 2,Other
+26 09,Instrumentation and Control for Electrical Systems,Level 2,Other
+26 10,Medium-Voltage Electrical Distribution,Level 2,Other
+26 11,Substations,Level 2,Other
+26 12,Medium-Voltage Transformers,Level 2,Other
+26 13,Medium-Voltage Switchgear,Level 2,Other
+26 18,Medium-Voltage Circuit Protection Devices,Level 2,Other
+26 20,Low-Voltage Electrical Distribution,Level 2,Other
+26 21,Low-Voltage Overhead Electrical Power Systems,Level 2,Other
+26 22,Low-Voltage Transformers,Level 2,Other
+26 23,Low-Voltage Switchgear,Level 2,Other
+26 24,Switchboards and Panelboards,Level 2,Other
+26 25,Enclosed Bus Assemblies,Level 2,Other
+26 26,Power Distribution Units,Level 2,Other
+26 27,Low-Voltage Distribution Equipment,Level 2,Other
+26 28,Low-Voltage Circuit Protective Devices,Level 2,Other
+26 29,Low-Voltage Controllers,Level 2,Other
+26 30,Facility Electrical Power Generating and Storing Equipment,Level 2,Other
+26 31,Photovoltaic Collectors,Level 2,Other
+26 32,Packaged Generator Assemblies,Level 2,Other
+26 33,Battery Equipment,Level 2,Other
+26 35,Power Filters and Conditioners,Level 2,Other
+26 36,Transfer Switches,Level 2,Other
+26 40,Electrical and Cathodic Protection ,Level 2,Other
+26 41,Facility Lightning Protection,Level 2,Other
+26 42,Cathodic Protection,Level 2,Other
+26 43,Transient Voltage Suppression,Level 2,Other
+26 50,Lighting,Level 2,Other
+26 51,Interior Lighting,Level 2,Other
+26 52,Emergency Lighting,Level 2,Other
+26 53,Exit Signs,Level 2,Other
+26 54,Classified Location Lighting,Level 2,Other
+26 55,Special Purpose Lighting,Level 2,Other
+26 56,Exterior Lighting,Level 2,Other
+26 60,Unassigned,Level 2,Other
+26 70,Unassigned,Level 2,Other
+26 80,Unassigned,Level 2,Other
+26 90,Unassigned,Level 2,Other
+27 00,Communications,Level 1,Other
+27 01,Operation and Maintenance of Communications Systems,Level 2,Other
+27 05,Common Work Results for Communications,Level 2,Other
+27 06,Schedules for Communications,Level 2,Other
+27 08,Commissioning of Communications,Level 2,Other
+27 10,Structured Cabling,Level 2,Other
+27 11,Communications Equipment Room Fittings,Level 2,Other
+27 13,Communications Backbone Cabling,Level 2,Other
+27 15,Communications Horizontal Cabling,Level 2,Other
+27 16,"Communications Connecting Cords, Devices and Adapters",Level 2,Other
+27 20,Data Communications,Level 2,Other
+27 21,Data Communications Network Equipment,Level 2,Other
+27 22,Data Communications Hardware,Level 2,Other
+27 24,Data Communications Peripheral Data Equipment,Level 2,Other
+27 25,Data Communications Software,Level 2,Other
+27 26,Data Communications Programming and Integration Services,Level 2,Other
+27 30,Voice Communications,Level 2,Other
+27 31,Voice Communications Switching and Routing Equipment,Level 2,Other
+27 32,"Voice Communications Telephone Sets, Facsimiles and Modems",Level 2,Other
+27 33,Voice Communications Messaging,Level 2,Other
+27 34,Call Accounting,Level 2,Other
+27 35,Call Management,Level 2,Other
+27 40,Audio-Video Communications,Level 2,Other
+27 41,Audio-Video Systems,Level 2,Other
+27 42,Electronic Digital Systems,Level 2,Other
+27 50,Distributed Communications and Monitoring Systems,Level 2,Other
+27 51,Distributed Audio-Video Communications Systems,Level 2,Other
+27 52,Healthcare Communications and Monitoring Systems,Level 2,Other
+27 53,Distributed Systems,Level 2,Other
+27 60,Unassigned,Level 2,Other
+27 70,Unassigned,Level 2,Other
+27 80,Unassigned,Level 2,Other
+27 90,Unassigned,Level 2,Other
+28 00,Electronic Safety and Security,Level 1,Other
+28 01,Operation and Maintenance of Electronic Safety and Security,Level 2,Other
+28 05,Common Work Results for Electronic Safety and Security,Level 2,Other
+28 06,Schedules for Electronic Safety and Security,Level 2,Other
+28 08,Commissioning of Electronic Safety and Security,Level 2,Other
+28 10,Electronic Access Control and Intrusion Detection,Level 2,Other
+28 13,Access Control,Level 2,Other
+28 16,Intrusion Detection,Level 2,Other
+28 20,Electronic Surveillance,Level 2,Other
+28 23,Video Surveillance,Level 2,Other
+28 26,Electronic Personal Protection Systems,Level 2,Other
+28 30,Electronic Detection and Alarm,Level 2,Other
+28 31,Fire Detection and Alarm,Level 2,Other
+28 32,Radiation Detection and Alarm,Level 2,Other
+28 33,Fuel-Gas Detection and Alarm,Level 2,Other
+28 34,Fuel-Oil Detection and Alarm,Level 2,Other
+28 35,Refrigerant Detection and Alarm,Level 2,Other
+28 40,Electronic Monitoring and Control,Level 2,Other
+28 46,Electronic Detention Monitoring and Control Systems,Level 2,Other
+28 50,Unassigned,Level 2,Other
+28 60,Unassigned,Level 2,Other
+28 70,Unassigned,Level 2,Other
+28 80,Unassigned,Level 2,Other
+28 90,Unassigned,Level 2,Other
+31 00,Earthwork,Level 1,Other
+31 01,Maintenance of Earthwork,Level 2,Other
+31 05,Common Work Results for Earthwork,Level 2,Other
+31 06,Schedules for Earthwork,Level 2,Other
+31 08,Commissioning of Earthwork,Level 2,Other
+31 09,Geotechnical Instrumentation and Monitoring of Earthwork,Level 2,Other
+31 10,Site Clearing,Level 2,Other
+31 11,Clearing and Grubbing,Level 2,Other
+31 12,Selective Clearing,Level 2,Other
+31 13,Selective Tree and Shrub Removal and Trimming,Level 2,Other
+31 14,Earth Stripping and Stockpiling,Level 2,Other
+31 20,Earth Moving,Level 2,Other
+31 21,Off-Gassing Mitigation,Level 2,Other
+31 22,Grading,Level 2,Other
+31 23,Excavation and Fill,Level 2,Other
+31 24,Embankments,Level 2,Other
+31 25,Erosion and Sedimentation Controls,Level 2,Other
+31 30,Earthwork Methods,Level 2,Other
+31 31,Soil Treatment,Level 2,Other
+31 32,Soil Stabilization,Level 2,Other
+31 33,Rock Stabilization,Level 2,Other
+31 34,Soil Reinforcement,Level 2,Other
+31 35,Slope Protection,Level 2,Other
+31 36,Gabions,Level 2,Other
+31 37,Riprap,Level 2,Other
+31 40,Shoring and Underpinning,Level 2,Other
+31 41,Shoring,Level 2,Other
+31 43,Concrete Raising,Level 2,Other
+31 45,Vibroflotation and Densification,Level 2,Other
+31 46,Needle Beams,Level 2,Other
+31 48,Underpinning,Level 2,Other
+31 50,Excavation Support and Protection,Level 2,Other
+31 51,Anchor Tiebacks,Level 2,Other
+31 52,Cofferdams,Level 2,Other
+31 53,Cribbing and Walers,Level 2,Other
+31 54,Ground Freezing,Level 2,Other
+31 56,Slurry Walls,Level 2,Other
+31 60,Special Foundations and Load-Bearing Elements,Level 2,Other
+31 62,Driven Piles,Level 2,Other
+31 63,Bored Piles,Level 2,Other
+31 64,Caissons,Level 2,Other
+31 66,Special Foundations,Level 2,Other
+31 68,Foundation Anchors,Level 2,Other
+31 70,Tunneling and Mining,Level 2,Other
+31 71,Tunnel Excavation,Level 2,Other
+31 72,Tunnel Support Systems,Level 2,Other
+31 73,Tunnel Grouting,Level 2,Other
+31 74,Tunnel Construction,Level 2,Other
+31 75,Shaft Construction,Level 2,Other
+31 77,Submersible Tube Tunnels,Level 2,Other
+31 80,Unassigned,Level 2,Other
+31 90,Unassigned,Level 2,Other
+32 00,Exterior Improvements,Level 1,Other
+32 01,Operation and Maintenance of Exterior Improvements,Level 2,Other
+32 05,Common Work Results for Exterior Improvements,Level 2,Other
+32 06,Schedules for Exterior Improvements,Level 2,Other
+32 08,Commissioning of Exterior Improvements,Level 2,Other
+32 10,"Bases, Ballasts, and Paving",Level 2,Other
+32 11,Base Courses,Level 2,Other
+32 12,Flexible Paving,Level 2,Other
+32 13,Rigid Paving,Level 2,Other
+32 14,Unit Paving,Level 2,Other
+32 15,Aggregate Surfacing,Level 2,Other
+32 16,Curbs and Gutters,Level 2,Other
+32 17,Paving Specialties,Level 2,Other
+32 18,Athletic and Recreational Surfacing,Level 2,Other
+32 20,Unassigned,Level 2,Other
+32 30,Site Improvements,Level 2,Other
+32 31,Fences and Gates,Level 2,Other
+32 32,Retaining Walls,Level 2,Other
+32 34,Fabricated Bridges,Level 2,Other
+32 35,Screening Devices,Level 2,Other
+32 40,Unassigned,Level 2,Other
+32 50,Unassigned,Level 2,Other
+32 60,Unassigned,Level 2,Other
+32 70,Wetlands,Level 2,Other
+32 71,Constructed Wetlands,Level 2,Other
+32 72,Wetlands Restoration,Level 2,Other
+32 80,Irrigation,Level 2,Other
+32 82,Irrigation Pumps,Level 2,Other
+32 84,Planting Irrigation,Level 2,Other
+32 86,Agricultural Irrigation,Level 2,Other
+32 90,Planting,Level 2,Other
+32 91,Planting Preparation,Level 2,Other
+32 92,Turf and Grasses,Level 2,Other
+32 93,Plants,Level 2,Other
+32 94,Planting Accessories,Level 2,Other
+32 96,Transplanting,Level 2,Other
+33 00,Utilities,Level 1,Other
+33 01,Operation and Maintenance of Utilities,Level 2,Other
+33 05,Common Work Results for Utilities,Level 2,Other
+33 06,Schedules for Utilities,Level 2,Other
+33 08,Commissioning of Utilities,Level 2,Other
+33 09,Instrumentation and Control for Utilities,Level 2,Other
+33 10,Water Utilities,Level 2,Other
+33 11,Water Utility Distribution Piping,Level 2,Other
+33 12,Water Utility Distribution Equipment,Level 2,Other
+33 13,Disinfecting of Water Utility Distribution,Level 2,Other
+33 16,Water Utility Storage Tanks,Level 2,Other
+33 20,Wells,Level 2,Other
+33 21,Water Supply Wells,Level 2,Other
+33 22,Test Wells,Level 2,Other
+33 23,Extraction Wells,Level 2,Other
+33 24,Monitoring Wells,Level 2,Other
+33 25,Recharge Wells,Level 2,Other
+33 26,Relief Wells,Level 2,Other
+33 29,Well Abandonment,Level 2,Other
+33 30,Sanitary Sewerage Utilities,Level 2,Other
+33 31,Sanitary Utility Sewerage Piping,Level 2,Other
+33 32,Wastewater Utility Pumping Stations,Level 2,Other
+33 33,Low Pressure Utility Sewerage,Level 2,Other
+33 34,Sanitary Utility Sewerage Force Mains,Level 2,Other
+33 36,Utility Septic Tanks,Level 2,Other
+33 39,Sanitary Utility Sewerage Structures,Level 2,Other
+33 40,Storm Drainage Utilities,Level 2,Other
+33 41,Storm Utility Drainage Piping,Level 2,Other
+33 42,Culverts,Level 2,Other
+33 44,Storm Utility Water Drains,Level 2,Other
+33 45,Storm Utility Drainage Pumps,Level 2,Other
+33 46,Subdrainage,Level 2,Other
+33 47,Ponds and Reservoirs,Level 2,Other
+33 49,Storm Drainage Structures,Level 2,Other
+33 50,Fuel Distribution Utilities,Level 2,Other
+33 51,Natural-Gas Distribution,Level 2,Other
+33 52,Liquid Fuel Distribution,Level 2,Other
+33 56,Fuel-Storage Tanks,Level 2,Other
+33 60,Hydronic and Steam Energy Utilities,Level 2,Other
+33 61,Hydronic Energy Distribution,Level 2,Other
+33 63,Steam Energy Distribution,Level 2,Other
+33 70,Electrical Utilities,Level 2,Other
+33 71,Electrical Utility Transmission and Distribution,Level 2,Other
+33 72,Utility Substations,Level 2,Other
+33 73,Utility Transformers,Level 2,Other
+33 75,High-Voltage Switchgear and Protection Devices,Level 2,Other
+33 77,Medium-Voltage Utility Switchgear and Protection Devices,Level 2,Other
+33 79,Site Grounding,Level 2,Other
+33 80,Communications Utilities,Level 2,Other
+33 81,Communications Structures,Level 2,Other
+33 82,Communications Distribution,Level 2,Other
+33 83,Wireless Communications Distribution,Level 2,Other
+33 90,Unassigned,Level 2,Other
+34 00,Transportation,Level 1,Other
+34 01,Operation and Maintenance of Transportation,Level 2,Other
+34 05,Common Work Results for Transportation,Level 2,Other
+34 06,Schedules for Transportation,Level 2,Other
+34 08,Commissioning of Transportation,Level 2,Other
+34 10,Guideways/Railways,Level 2,Other
+34 11,Rail Tracks,Level 2,Other
+34 12,Monorails,Level 2,Other
+34 13,Funiculars,Level 2,Other
+34 14,Cable Transportation,Level 2,Other
+34 20,Traction Power,Level 2,Other
+34 21,Traction Power Distribution,Level 2,Other
+34 23,Overhead Traction Power,Level 2,Other
+34 24,Third Rail Traction Power,Level 2,Other
+34 30,Unassigned,Level 2,Other
+34 40,Transportation Signaling and Control Equipment,Level 2,Other
+34 41,Roadway Signaling and Control Equipment,Level 2,Other
+34 42,Railway Signaling and Control Equipment,Level 2,Other
+34 43,Airfield Signaling and Control Equipment,Level 2,Other
+34 48,Bridge Signaling and Control Equipment,Level 2,Other
+34 50,Transportation Fare Collection Equipment,Level 2,Other
+34 52,Vehicle Fare Collection,Level 2,Other
+34 54,Passenger Fare Collection,Level 2,Other
+34 60,Unassigned,Level 2,Other
+34 70,Transportation Construction and Equipment,Level 2,Other
+34 71,Roadway Construction,Level 2,Other
+34 72,Railway Construction,Level 2,Other
+34 73,Airfield Construction,Level 2,Other
+34 75,Roadway Equipment,Level 2,Other
+34 76,Railway Equipment,Level 2,Other
+34 77,Transportation Equipment,Level 2,Other
+34 80,bridges,Level 2,Other
+34 81,Bridge Machinery,Level 2,Other
+34 82,Bridge Specialties,Level 2,Other
+34 90,Unassigned,Level 2,Other
+35 00,Waterway and Marine Construction,Level 1,Other
+35 01,Operation and Maintenance of Waterway and Marine Construction,Level 2,Other
+35 05,Common Work Results for Waterway and Marine Construction,Level 2,Other
+35 06,Schedules for Waterway and Marine Construction,Level 2,Other
+35 08,Commissioning of Waterway and Marine Construction,Level 2,Other
+35 10,Waterway and Marine Signaling and Control Equipment,Level 2,Other
+35 11,Signaling and Control Equipment for Waterways,Level 2,Other
+35 12,Marine Signaling and Control Equipment,Level 2,Other
+35 13,Signaling and Control Equipment for Dams,Level 2,Other
+35 20,Waterway and Marine Construction and Equipment,Level 2,Other
+35 30,Coastal Construction,Level 2,Other
+35 31,Shoreline Protection,Level 2,Other
+35 32,Artificial Reefs,Level 2,Other
+35 40,Waterway Construction and Equipment,Level 2,Other
+35 41,Levees,Level 2,Other
+35 42,Waterway Bank Protection,Level 2,Other
+35 43,Waterway Scour Protection,Level 2,Other
+35 49,Waterway Structures,Level 2,Other
+35 50,Marine Construction and Equipment,Level 2,Other
+35 51,Floating Construction,Level 2,Other
+35 52,Offshore Platform Construction,Level 2,Other
+35 53,Underwater Construction,Level 2,Other
+35 59,Marine Specialties,Level 2,Other
+35 60,Unassigned,Level 2,Other
+35 70,Dam Construction and Equipment,Level 2,Other
+35 71,Gravity Dams,Level 2,Other
+35 72,Arch Dams,Level 2,Other
+35 73,Embankment Dams,Level 2,Other
+35 74,Buttress Dams,Level 2,Other
+35 79,Auxiliary Dam Structures,Level 2,Other
+35 80,Unassigned,Level 2,Other
+35 90,Unassigned,Level 2,Other
+40 00,Process Integration,Level 1,Other
+40 01,Operation and Maintenance of Process Integration,Level 2,Other
+40 05,Common Work Results for Process Integration,Level 2,Other
+40 06,Schedules for Process Integration,Level 2,Other
+40 10,Gas and Vapor Process Piping,Level 2,Other
+40 11,Steam Process Piping,Level 2,Other
+40 12,Compressed Air Process Piping,Level 2,Other
+40 13,Inert Gases Process Piping,Level 2,Other
+40 14,Fuel Gases Process Piping,Level 2,Other
+40 15,Combustion System Gas Piping,Level 2,Other
+40 16,Specialty and High-Purity Gases Piping,Level 2,Other
+40 17,Welding and Cutting Gases Piping,Level 2,Other
+40 18,Vacuum Systems Process Piping,Level 2,Other
+40 20,Liquids Process Piping,Level 2,Other
+40 21,Liquid Fuel Process Piping,Level 2,Other
+40 22,Petroleum Products Piping,Level 2,Other
+40 23,Water Process Piping,Level 2,Other
+40 24,Specialty Liquid Chemicals Piping,Level 2,Other
+40 25,Liquid Acids and Bases Piping,Level 2,Other
+40 26,Liquid Polymer Piping,Level 2,Other
+40 30,Solid and Mixed Materials Piping and Chutes,Level 2,Other
+40 32,Bulk Materials Piping and Chutes,Level 2,Other
+40 33,Bulk Materials Valves,Level 2,Other
+40 34,Pneumatic Conveying Lines,Level 2,Other
+40 40,Process Piping and Equipment Protection,Level 2,Other
+40 41,Process Piping and Equipment Heat Tracing,Level 2,Other
+40 42,Process Piping and Equipment Insulation,Level 2,Other
+40 46,Process Corrosion Protection,Level 2,Other
+40 47,Refractories,Level 2,Other
+40 50,Unassigned,Level 2,Other
+40 60,Unassigned,Level 2,Other
+40 70,Unassigned,Level 2,Other
+40 80,Commissioning of Process Systems,Level 2,Other
+40 90,Instrumentation and Control for Process Systems,Level 2,Other
+40 91,Primary Process Measurement Devices,Level 2,Other
+40 92,Primary Control Devices,Level 2,Other
+40 93,Analog Controllers/Recorders,Level 2,Other
+40 94,Digital Process Controllers,Level 2,Other
+40 95,Process Control Hardware,Level 2,Other
+40 96,Process Control Software,Level 2,Other
+40 97,Process Control Auxiliary Devices,Level 2,Other
+41 00,Material Processing and Handling Equipment,Level 1,Other
+41 01,Operation and Maintenance of Material Processing and Handling Equipment,Level 2,Other
+41 06,Schedules for Material Processing and Handling Equipment,Level 2,Other
+41 08,Commissioning of Material Processing and Handling Equipment,Level 2,Other
+41 10,Bulk Material Processing Equipment,Level 2,Other
+41 11,Bulk Material Sizing Equipment,Level 2,Other
+41 12,Bulk Material Conveying Equipment,Level 2,Other
+41 13,Bulk Material Feeders,Level 2,Other
+41 14,Batching Equipment,Level 2,Other
+41 20,Piece Material Handling Equipment,Level 2,Other
+41 21,Conveyors,Level 2,Other
+41 22,Cranes and Hoists,Level 2,Other
+41 23,Lifting Devices,Level 2,Other
+41 24,Specialty Material Handling Equipment,Level 2,Other
+41 30,Manufacturing Equipment,Level 2,Other
+41 31,Manufacturing Lines and Equipment,Level 2,Other
+41 32,Forming Equipment,Level 2,Other
+41 33,Machining Equipment,Level 2,Other
+41 34,Finishing Equipment,Level 2,Other
+41 35,Dies and Molds,Level 2,Other
+41 36,Assembly and Testing Equipment,Level 2,Other
+41 40,Container Processing and Packaging,Level 2,Other
+41 41,Container Filling and Sealing,Level 2,Other
+41 42,Container Packing Equipment,Level 2,Other
+41 43,Shipping Packaging,Level 2,Other
+41 50,Material Storage,Level 2,Other
+41 51,Automatic Material Storage,Level 2,Other
+41 52,Bulk Material Storage,Level 2,Other
+41 53,Storage Equipment and Systems,Level 2,Other
+41 60,Mobile Plant Equipment,Level 2,Other
+41 61,Mobile Earth Moving Equipment,Level 2,Other
+41 62,Trucks,Level 2,Other
+41 63,General Vehicles,Level 2,Other
+41 64,Rail Vehicles,Level 2,Other
+41 65,Mobile Support Equipment,Level 2,Other
+41 66,Miscellaneous Mobile Equipment,Level 2,Other
+41 67,Plant Maintenance Equipment,Level 2,Other
+41 70,Unassigned,Level 2,Other
+41 80,Unassigned,Level 2,Other
+41 90,Unassigned,Level 2,Other
+42 00,"Process Heating, Cooling, and Drying Equipment",Level 1,Other
+42 01,"Operation and Maintenance of Process Heating, Cooling, and Drying Equipment",Level 2,Other
+42 06,"Schedules for Process Heating, Cooling, and Drying Equipment",Level 2,Other
+42 08,"Commissioning of Process Heating, Cooling, and Drying Equipment",Level 2,Other
+42 10,Process Heating Equipment,Level 2,Other
+42 11,Process Boilers,Level 2,Other
+42 12,Process Heaters,Level 2,Other
+42 13,Industrial Heat Exchangers and Recuperators,Level 2,Other
+42 14,Industrial Furnaces,Level 2,Other
+42 15,Industrial Ovens,Level 2,Other
+42 20,Process Cooling Equipment,Level 2,Other
+42 21,Process Cooling Towers,Level 2,Other
+42 22,Process Chillers and Coolers,Level 2,Other
+42 23,Process Condensers and Evaporators,Level 2,Other
+42 30,Process Drying Equipment,Level 2,Other
+42 31,Gas Dryers and Dehumidifiers,Level 2,Other
+42 32,Material Dryers,Level 2,Other
+42 40,Unassigned,Level 2,Other
+42 50,Unassigned,Level 2,Other
+42 60,Unassigned,Level 2,Other
+42 70,Unassigned,Level 2,Other
+42 80,Unassigned,Level 2,Other
+42 90,Unassigned,Level 2,Other
+43 00,"Process Gas and Liquid Handling, Purification, and Storage Equipment",Level 1,Other
+43 01,"Operation and Maintenance of Process Gas and Liquid Handling, Purification, and Storage Equipment",Level 2,Other
+43 06,"Schedules for Process Gas and Liquid Handling, Purification, and Storage Equipment",Level 2,Other
+43 08,"Commissioning of Process Gas and Liquid Handling, Purification, and Storage Equipment",Level 2,Other
+43 10,Gas Handling Equipment,Level 2,Other
+43 11,"Gas Fans, Blowers and Pumps",Level 2,Other
+43 12,Gas Compressors,Level 2,Other
+43 13,Gas Process Equipment,Level 2,Other
+43 20,Liquid Handling Equipment,Level 2,Other
+43 21,Liquid Pumps,Level 2,Other
+43 22,Liquid Process Equipment,Level 2,Other
+43 30,Gas and Liquid Purification Equipment,Level 2,Other
+43 31,Gas and Liquid Purification Filtration Equipment,Level 2,Other
+43 32,Gas and Liquid Purification Process Equipment,Level 2,Other
+43 40,Gas and Liquid Storage,Level 2,Other
+43 41,Gas and Liquid Storage Equipment,Level 2,Other
+43 50,Unassigned,Level 2,Other
+43 60,Unassigned,Level 2,Other
+43 70,Unassigned,Level 2,Other
+43 80,Unassigned,Level 2,Other
+43 90,Unassigned,Level 2,Other
+44 00,Pollution Control Equipment,Level 1,Other
+44 01,Operation and Maintenance of Pollution Control Equipment,Level 2,Other
+44 06,Schedules for Pollution Control Equipment,Level 2,Other
+44 08,Commissioning of Pollution Control Equipment,Level 2,Other
+44 10,Air Pollution Control,Level 2,Other
+44 11,Air Pollution Control Equipment,Level 2,Other
+44 20,Noise Pollution Control,Level 2,Other
+44 21,Noise Pollution Control Equipment,Level 2,Other
+44 40,Water Treatment Equipment,Level 2,Other
+44 41,Packaged Water Treatment,Level 2,Other
+44 42,General Water Treatment Equipment,Level 2,Other
+44 43,Water Filtration Equipment,Level 2,Other
+44 44,Water Treatment Chemical Systems Equipment,Level 2,Other
+44 45,Water Treatment Biological Systems Equipment,Level 2,Other
+44 46,Sludge Treatment and Handling Equipment for Water Treatment Systems,Level 2,Other
+44 50,Solid Waste Control,Level 2,Other
+44 51,Solid Waste Control Equipment,Level 2,Other
+44 60,Unassigned,Level 2,Other
+44 70,Unassigned,Level 2,Other
+44 80,Unassigned,Level 2,Other
+44 90,Unassigned,Level 2,Other
+45 00,Industry-Specific Manufacturing Equipment,Level 1,Other
+45 08,Commissioning of Industry-Specific Manufacturing Equipment,Level 2,Other
+45 11,Oil and Gas Extraction Equipment,Level 2,Other
+45 13,Mining Machinery and Equipment,Level 2,Other
+45 15,Food Manufacturing Equipment,Level 2,Other
+45 17,Beverage and Tobacco Manufacturing Equipment,Level 2,Other
+45 19,Textiles and Apparel Manufacturing Equipment,Level 2,Other
+45 21,Leather and Allied Product Manufacturing Equipment,Level 2,Other
+45 23,Wood Product Manufacturing Equipment,Level 2,Other
+45 25,Paper Manufacturing Equipment,Level 2,Other
+45 27,Printing and Related Manufacturing Equipment,Level 2,Other
+45 29,Petroleum and Coal Products Manufacturing Equipment,Level 2,Other
+45 31,Chemical Manufacturing Equipment,Level 2,Other
+45 33,Plastics and Rubber Manufacturing Equipment,Level 2,Other
+45 35,Nonmetallic Mineral Product Manufacturing Equipment,Level 2,Other
+45 37,Primary Metal Manufacturing Equipment,Level 2,Other
+45 39,Fabricated Metal Product Manufacturing Equipment,Level 2,Other
+45 41,Machinery Manufacturing Equipment,Level 2,Other
+45 43,Computer and Electronic Product Manufacturing Equipment,Level 2,Other
+45 45,"Electrical Equipment, Appliance, and Component Manufacturing Equipment",Level 2,Other
+45 47,Transportation Manufacturing Equipment,Level 2,Other
+45 49,Furniture and Related Product Manufacturing Equipment,Level 2,Other
+45 51,Other Manufacturing Equipment,Level 2,Other
+45 60,Unassigned,Level 2,Other
+45 70,Unassigned,Level 2,Other
+45 80,Unassigned,Level 2,Other
+45 90,Unassigned,Level 2,Other
+48 00,Electrical Power Generation,Level 1,Other
+48 01,Operation and Maintenance for Electrical Power Generation,Level 2,Other
+48 05,Common Work Results for Electrical Power Generation,Level 2,Other
+48 06,Schedules for Electrical Power Generation,Level 2,Other
+48 08,Commissioning of Electrical Power Generation,Level 2,Other
+48 09,Instrumentation and Control for Electrical Power Generation,Level 2,Other
+48 10,Electrical Power Generation Equipment,Level 2,Other
+48 11,Fossil Fuel Plant Electrical Power Generation Equipment,Level 2,Other
+48 12,Nuclear Fuel Plant Electrical Power Generation Equipment,Level 2,Other
+48 13,Hydroelectric Plant Electrical Power Generation Equipment,Level 2,Other
+48 14,Solar Energy Electrical Power Generation Equipment,Level 2,Other
+48 15,Wind Energy Electrical Power Generation Equipment,Level 2,Other
+48 16,Geothermal Energy Electrical Power Generation Equipment,Level 2,Other
+48 17,Electrochemical Energy Electrical Power Generation Equipment,Level 2,Other
+48 18,Fuel Cell Electrical Power Generation Equipment,Level 2,Other
+48 19,Electrical Power Control Equipment,Level 2,Other
+48 20,Unassigned,Level 2,Other
+48 30,Unassigned,Level 2,Other
+48 40,Unassigned,Level 2,Other
+48 50,Unassigned,Level 2,Other
+48 60,Unassigned,Level 2,Other
+48 70,Electrical Power Generation Testing,Level 2,Other
+48 71,Electrical Power Generation Test Equipment,Level 2,Other
+48 80,Unassigned,Level 2,Other
+48 90,Unassigned,Level 2,Other
