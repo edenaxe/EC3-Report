@@ -1,0 +1,487 @@
+---
+title: "EC3 Elements Report Analysis"
+#author: "Eden Axelrad"
+output: 
+  html_document:
+    theme: paper
+---
+
+<style>
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:focus:hover {
+    webkit-box-shadow: inset 0 -2px 0 #4e2751;
+    box-shadow: inset 0 -2px 0 #4e2751;
+    color: #4e2751;
+}
+
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus,
+.nav-tabs > li > a:focus:hover {
+    box-shadow: inset 0 -2px 0 #8949c5;
+    color: #8949c5;
+}
+
+</style>
+
+```{r setup, include=FALSE}
+
+# Load required libraries
+library(tidyverse)
+library(readxl)
+library(highcharter)
+library(plotly)
+library(DT)
+library(sunburstR)
+
+```
+
+```{r get data, echo=FALSE, warning=FALSE, include=FALSE}
+
+# Read in the Master format table
+Masterformat_Codes <- read.csv("Data/Masterformat 2 Codes.csv")
+
+# Cleanup function that takes a single report and provides an organized data frame
+File_Path <- paste0("Element Reports/", "WUSM Kienstra Data 5.18.23-elements-report.xlsx")
+
+# Retrieve project header info (name, level of dev, area, date of report, and data source)
+Project_Info <- c(
+  read_excel(File_Path, sheet = "Sheet2", col_names = FALSE)[1:3, 1:2]  %>% deframe(),
+  read_excel(File_Path, sheet = "Sheet2", col_names = FALSE)[1:2, 4:5]  %>% deframe()) 
+
+# Create parameters from the area and project name 
+Area <- as.numeric(Project_Info["Area"])
+Project <- Project_Info["EC3 Building Project"]
+
+# LJC Color Palette
+ljc_colors <- c("#9A9795", "#F7CF7A", "#7AB5D1", "#2A378E", "#F04A52", "#F5C4D3", "#79BC5E", "#4E2751")
+
+# Read in and clean the report
+Report <- read_excel(File_Path, sheet = "Sheet2", skip = 4) %>%
+  # Remove any rows that have an A5 sub-assembly (construction)
+  filter(Subassembly != "A5 Construction") %>%
+  rename("Baseline (kgCO2e)" = 7,
+         "Conservative (kgCO2e)" = 8,
+         "Realized (kgCO2e)" = 9,
+         "Achievable (kgCO2e)" = 11,
+         "Selected Material Name" = 15,
+         "Selected Material Manufacturer" = 13,
+         "Selected Material Plant" = 14) %>%
+  # Add project name, area, reduction from baseline and master format codes
+  mutate(Project = Project, 
+         Area = Area,
+         Unit = gsub("1 ", "", unit),
+         `Reduction from Baseline` = 1-(`Realized (kgCO2e)`/`Baseline (kgCO2e)`),
+         `Masterformat Code` = substr(Masterformat, 1, 8),
+         `M1 Code` = substr(`Masterformat Code`, 1, 2),
+         `M2 Code` = str_squish(substr(`Masterformat Code`, 1, 5)),
+         `Masterformat 3` = ifelse(substr(`Masterformat Code`, 7, 8) == "00", 
+                                   "", str_squish(gsub('[0-9]+', '', Masterformat)))) %>%
+  mutate_if(is.numeric, round, digits = 4) %>%
+  # Merge with named lists to replace codes with actual names
+  left_join(
+    Masterformat_Codes %>%
+      filter(Level == "Level 1") %>%
+      mutate(`M1 Code` = substr(L2.Code, 1, 2)) %>%
+      select(`M1 Code`, "Masterformat 1" = Name),
+    by = "M1 Code") %>%
+  left_join(
+    Masterformat_Codes %>%
+      mutate(`M2 Code` = str_squish(substr(L2.Code, 1, 6))) %>%
+      select(`M2 Code`, "Masterformat 2" = Name, Assembly),
+    by = "M2 Code") %>%
+  # Reorder columns and drop non-relevant columns
+  select(Project, Area, `Masterformat Code`, `Masterformat 1`, `Masterformat 2`, `Masterformat 3`, 
+         Assembly, Element, Material, Quantity, Unit, `Baseline (kgCO2e)`, `Conservative (kgCO2e)`, 
+         `Realized (kgCO2e)`, `Achievable (kgCO2e)`, `Reduction from Baseline`,
+         `Selected Material Name`, `Selected Material Manufacturer`, `Selected Material Plant`) %>%
+  drop_na(Quantity)
+
+```
+
+<br>
+
+## Results for `r return(Project)`{.tabset}
+
+<br>
+
+### Project Info {.tabset}
+
+<br>
+
+```{r overall, echo=FALSE, fig.align = 'center'}
+
+Project_Info <- Project_Info %>%
+  as.data.frame() %>%
+  rownames_to_column() %>%
+  rename("Parameter" = 1, "Value" = 2) %>%
+  rbind.data.frame(
+    c("Total Embodied Carbon (kgCO2e)", 
+      scales::comma(sum(Report$`Realized (kgCO2e)`))),
+    c("EC Intensity (kgCO2e/sqft)", 
+      round(sum(Report$`Realized (kgCO2e)`)/Area, digits = 2)),
+    c("Reduction from Baselline (kgCO2e)", 
+      scales::comma(sum(Report$`Baseline (kgCO2e)`)-sum(Report$`Realized (kgCO2e)`))),
+    c("Reduction from Baseline (%)", 
+      scales::percent((sum(Report$`Baseline (kgCO2e)`)-sum(Report$`Realized (kgCO2e)`))/sum(Report$`Baseline (kgCO2e)`), 
+                      accuracy = 0.01))) 
+
+Project_Info[3, 1:2] <- c("Area (square feet)", scales::comma(Area))
+
+Project_Info %>%
+  knitr::kable()
+
+```
+
+<br>
+
+```{r scenario, echo=FALSE, warning=FALSE, fig.align = 'center'}
+
+# Create a table that has total EC by scenario
+By_Scenario <- Report %>%
+  select(`Masterformat 1`, `Baseline (kgCO2e)`, `Conservative (kgCO2e)`,  `Achievable (kgCO2e)`, `Realized (kgCO2e)`) %>%
+  rename("CSI Division" = 1, "Baseline" = 2, "Conservative" = 3, "Achievable" = 4, "Realized" = 5) %>%
+  pivot_longer(-`CSI Division`,
+               names_to = "Scenario",
+               values_to = "Embodied Carbon (kgCO2e)") %>%
+  group_by(Scenario) %>%
+  summarize("Embodied Carbon (mtCO2e)" = sum(`Embodied Carbon (kgCO2e)`)/1000) %>%
+  mutate(Scenario = factor(Scenario, levels = c("Baseline", "Conservative", 
+                                                "Achievable", "Realized"))) %>%
+  arrange(Scenario)
+
+# Generate a plot showing the total EC by scenario
+By_Scenario %>%
+  ggplot(aes(x = Scenario, y = `Embodied Carbon (mtCO2e)`, fill = Scenario)) +
+  geom_col(width = .8) +
+  scale_fill_manual(values = c("#9c9a9a", "#9c9a9a", "#9c9a9a", "#4E2751")) +
+  scale_y_continuous(labels = scales::comma) +
+  scale_x_discrete(labels = c("Realized" = expression(bold(Realized)), parse = TRUE)) +
+  geom_segment(aes(x = 0.6, 
+                   xend = 4.4, 
+                   y = By_Scenario$`Embodied Carbon (mtCO2e)`[4], 
+                   yend = By_Scenario$`Embodied Carbon (mtCO2e)`[4]),
+               linetype = "dashed", 
+               color = "#4E2751") +
+  geom_text(aes(x = 1, y = `Embodied Carbon (mtCO2e)`[1], 
+                label = scales::comma(`Embodied Carbon (mtCO2e)`[1])), 
+            vjust = -.5, size = 3, fontface = "plain") +
+  geom_text(aes(x = 2, y = `Embodied Carbon (mtCO2e)`[2], 
+                label = scales::comma(`Embodied Carbon (mtCO2e)`[2])), 
+            vjust = -.5, size = 3, fontface = "plain") +
+  geom_text(aes(x = 3, y = `Embodied Carbon (mtCO2e)`[3], 
+                label = scales::comma(`Embodied Carbon (mtCO2e)`[3])), 
+            vjust = -.5, size = 3, fontface = "plain") +
+  geom_text(aes(x = 4, y = `Embodied Carbon (mtCO2e)`[4], 
+                label = scales::comma(`Embodied Carbon (mtCO2e)`[4])), 
+            vjust = -.5, size = 3.5, fontface = "bold") +
+  labs(title = "Embodied Carbon by Scenario",
+       x = "") +
+  theme_minimal() +
+  theme(panel.grid.major.x = element_blank(),
+        legend.position = "none",
+        text = element_text(family = "Arial"))
+
+```
+
+
+<br>
+
+### By Division {.tabset}
+
+```{r plot function, warning=FALSE, include=FALSE}
+
+# summary table needed for the plot function
+Summary_Table <- Report %>%
+  group_by(`Masterformat 1`) %>%
+  summarize(Baseline = sum(`Baseline (kgCO2e)`), 
+            Realized = sum(`Realized (kgCO2e)`)) %>%
+  pivot_longer(!`Masterformat 1`, names_to = "Type", values_to = "kgCO2e") %>%
+  left_join(
+    Report %>%
+      group_by(`Masterformat 1`) %>%
+      summarize(Baseline = sum(`Baseline (kgCO2e)`), 
+                Realized = sum(`Realized (kgCO2e)`)) %>%
+      mutate(Change = Realized-Baseline,
+             `Percent Change` = Change/Baseline),
+    by = "Masterformat 1") %>%
+  mutate(Change = ifelse(Type == "Realized", Change, NA),
+         `Percent Change` = ifelse(Type == "Realized", `Percent Change`, NA)) 
+
+# Plot for individual categories
+Plot_Mstfmt1_Comp <- function(Mstfmt) {
+  
+  baseline <- pluck(Summary_Table %>% 
+                      filter(`Masterformat 1` == Mstfmt) %>% 
+                      .$Baseline, 2)
+  
+  realized <- pluck(Summary_Table %>% 
+                      filter(`Masterformat 1` == Mstfmt) %>% 
+                      .$Realized, 2)
+  
+  sub_txt <- paste0(
+    pluck(Summary_Table %>% 
+            filter(`Masterformat 1` == Mstfmt) %>% 
+            .$`Percent Change`, 2) %>%
+      abs() %>%
+      scales::percent(accuracy = 0.1), 
+    ifelse(realized > baseline, " Increase", " Reduction"), 
+    " (", scales::comma(realized-baseline), " kgCO2e)")
+  
+  Plot <- Summary_Table %>%
+    filter(`Masterformat 1` == Mstfmt) %>%
+    ggplot(aes(x = Type, y = kgCO2e, fill = Type)) +
+    geom_col(width = .7) +
+    scale_fill_manual(values = c("#4E2751", "#8949c5")) +
+    geom_hline(yintercept = baseline,
+               color = "#E2231A",
+               linetype = "dashed",
+               linewidth = 0.75) +
+    {if(realized != baseline)
+    geom_segment(aes(x = 2, 
+                     y = baseline, 
+                     xend = 2, 
+                     yend = realized),
+                 lineend = "round",
+                 linejoin = "bevel",
+                 arrow = arrow(length = unit(0.2, "cm")),
+                 linewidth = 0.5,
+                 color = "black")}+
+    scale_y_continuous(labels = scales::comma) +
+    labs(title = Mstfmt,
+         subtitle = sub_txt,
+         x = "") +
+    theme_minimal() +
+    theme(panel.grid.major.x = element_blank(),
+          legend.position = "none")
+  
+  Plot
+  
+}
+
+```
+
+```{r summary table, echo=FALSE, fig.align = 'center'}
+
+Report %>%
+  mutate(`Masterformat Division` = paste(substr(`Masterformat Code`, 1, 2), `Masterformat 1`)) %>%
+  group_by(`Masterformat Division`) %>%
+  summarize(Baseline = sum(`Baseline (kgCO2e)`), 
+            Realized = sum(`Realized (kgCO2e)`)) %>%
+  mutate(Change = Realized-Baseline,
+         `Percent Change` = scales::percent(Change/Baseline)) %>%
+  mutate_if(is.numeric, scales::comma) %>%
+  knitr::kable()
+
+```
+
+<br>
+
+```{r dynamic tab, echo=FALSE, results='asis', fig.align = 'center'}
+
+tabs <- unique(Report$`Masterformat 1`)
+
+for(tab in tabs) {
+
+  cat('\n')
+  cat('#### ', tab, '   \n')
+  cat('\n')
+
+  plot_values <- Report %>% filter(`Masterformat 1` == tab)
+
+  print(Plot_Mstfmt1_Comp(tab))
+
+  cat('\n')
+
+}
+
+```
+
+### By Assembly
+
+```{r assembly table, echo=FALSE, fig.align = 'center'}
+
+Report %>%
+  group_by(Assembly) %>%
+  summarize(Baseline = sum(`Baseline (kgCO2e)`), 
+            Realized = sum(`Realized (kgCO2e)`)) %>%
+  mutate(Change = Baseline-Realized,
+         `Percent Change` = scales::percent(Change/Baseline)) %>%
+  mutate_if(is.numeric, scales::comma) %>%
+  knitr::kable()
+
+```
+
+<br>
+
+```{r assembly chart, echo=FALSE, fig.align = 'center'}
+
+Report %>%
+  group_by(Assembly) %>%
+  summarize(Baseline = sum(`Baseline (kgCO2e)`), 
+            Realized = sum(`Realized (kgCO2e)`),
+            Achievable = sum(`Achievable (kgCO2e)`)) %>%
+  pivot_longer(cols = c(Baseline, Realized, Achievable),
+               names_to = "Calculation",
+               values_to = "kgCO2e") %>%
+  mutate(Calculation = factor(Calculation, levels = c("Baseline", "Realized", "Achievable"))) %>%
+  ggplot(aes(x = Calculation, y = kgCO2e, fill = Calculation)) +
+  geom_col() +
+  scale_fill_manual(values = c("#9c9a9a", "#4E2751", "#b0b0b0")) +
+  scale_y_continuous(labels = scales::label_comma()) +
+  scale_x_discrete(guide = guide_axis(angle = 45)) +
+  facet_wrap(~Assembly, scales = "free") +
+  labs(title = "Realized vs Baseline and Achievable",
+       subtitle = "By Assembly",
+       x = "") +
+  theme(legend.position = "none")
+
+```
+
+### Bar Chart
+
+<br>
+
+```{r stacked bar, echo=FALSE, warning=FALSE, out.width="100%"}
+
+# Create a stacked bar chart at 3 levels of detail - total, master 1, and master 2
+stacked_plot <- rbind.data.frame(
+  Report %>%
+    mutate(Group = paste0(substr(`Masterformat Code`, 1, 2), " ", `Masterformat 1`, ": ", `Masterformat 2`)) %>%
+    group_by(Group) %>%
+    summarize(`Embodied Carbon (kgCO2e)` = sum(`Realized (kgCO2e)`)) %>%
+    mutate(Level = "Masterformat 2"),
+  Report %>%
+    mutate(Group = paste(substr(`Masterformat Code`, 1, 2), `Masterformat 1`)) %>%
+    group_by(Group) %>%
+    summarize(`Embodied Carbon (kgCO2e)` = sum(`Realized (kgCO2e)`)) %>%
+    mutate(Level = "Masterformat 1"),
+  data.frame(
+    Group = "Total",
+    Value = sum(Report$`Realized (kgCO2e)`),
+    Level = "Total") %>%
+    rename("Group" = Group, "Embodied Carbon (kgCO2e)" = Value, "Level" = Level)) %>%
+  mutate(Level = factor(Level, levels = c("Total", "Masterformat 1", "Masterformat 2")),
+         fill_grp = case_when(
+           Level == "Total" ~ "Total",
+           Level == "Masterformat 1" ~ Group,
+           Level == "Masterformat 2" ~ sub(":.*", "", Group))) %>%
+  ggplot(aes(x = Level, y = `Embodied Carbon (kgCO2e)`, fill = fill_grp,
+             text = paste0("<b>", Group, "</b>", 
+                           "<br>Emissions (kgCO2e): ", 
+                           scales::comma(`Embodied Carbon (kgCO2e)`),
+                           "<br>Share of Total: ", 
+                           scales::percent(`Embodied Carbon (kgCO2e)`/sum(Report$`Realized (kgCO2e)`), 
+                                           accuracy = 0.01)))) +
+  geom_bar(position = "stack", stat = "identity", color = "white", linewidth = .3) +
+  scale_fill_manual(values = ljc_colors) +
+  #scale_fill_brewer(palette = "Set2") +
+  scale_y_continuous(labels = scales::label_comma()) +
+  labs(x = "",
+       fill = "Division",
+       title = "Total Embodied Carbon by Level of Detail") +
+  theme_minimal() +
+  theme(panel.grid.major.x = element_blank())
+
+# Make it interactive with ggplotly 
+ggplotly(stacked_plot, tooltip = "text") %>%
+  config(displayModeBar = FALSE)
+
+```
+
+### Waterfall Chart
+
+<br>
+
+```{r waterfall, echo=FALSE, warning=FALSE, fig.align = 'center'}
+
+# Create a data frame for the waterfall chart 
+wtrfl_df <- rbind.data.frame(
+  data.frame(
+    Label = "Baseline (mtCO2e)",
+    Change = round(sum(Report$`Baseline (kgCO2e)`)/1000, digits = 2)), 
+  Report %>%
+    mutate(Label = paste0(substr(`Masterformat Code`, 1, 2), " ", `Masterformat 1`, ": ", `Masterformat 2`)) %>%
+    group_by(Label) %>%
+    summarize(Baseline = sum(`Baseline (kgCO2e)`), 
+              Realized = sum(`Realized (kgCO2e)`)) %>%
+    mutate(Change = round((Realized-Baseline)/1000, digits = 2)) %>%
+    filter(Change != 0) %>%
+    select(Label, Change)) %>%
+  mutate(Cumulative = cumsum(Change)) %>%
+  rbind.data.frame(
+    data.frame(
+      Label = "Realized (mtCO2e)",
+      Change = round(sum(Report$`Realized (kgCO2e)`)/1000, digits = 2),
+      Cumulative = round(sum(Report$`Realized (kgCO2e)`)/1000, digits = 2))) %>%
+  mutate(Order = rev(seq(1:nrow(.))),
+         Label = fct_reorder(Label, Order),
+         Start = ifelse(Label %in% c("Baseline (mtCO2e)", "Realized (mtCO2e)"), 0, Cumulative-Change),
+         Color = case_when(
+           Label == "Baseline (mtCO2e)" ~ "#333232",
+           Label == "Realized (mtCO2e)" ~ "#4E2751",
+           Change < 0 ~ "#33b86f",
+           Change > 0 ~ "#c94426"))
+
+
+# Use the above data frame to generate a ggplot waterfall chart
+wtrfl_df %>%
+  ggplot(aes(fill = Color)) +
+  geom_rect(aes(x = Label, 
+                xmin = Order - 0.45, xmax = Order + 0.45, 
+                ymin = Cumulative, ymax = Start),
+            color = "black") +
+  scale_fill_identity() +
+  scale_y_continuous(label = scales::comma) +
+  geom_hline(yintercept = 0) +
+  labs(x = "", y = "mtCO2e",
+       title = "Waterfall Chart: Realized vs Baseline",
+       subtitle = "(only shows categories with a change from baseline)") +
+  geom_text(aes(x = Label, 
+                y = wtrfl_df$Change[nrow(wtrfl_df)]*.9, 
+                label = scales::comma(Change, digits = 1)), 
+            hjust = 1, 
+            fontface = ifelse(wtrfl_df$Label %in% c("Baseline (mtCO2e)", "Realized (mtCO2e)"), "bold", "plain"), 
+            color = ifelse(wtrfl_df$Label %in% c("Baseline (mtCO2e)", "Realized (mtCO2e)"), "white", 
+                           ifelse(wtrfl_df$Change < 0, "#33b86f", "#c94426")),) +
+  coord_flip() +
+  theme(legend.position = "none",
+        axis.ticks = element_blank())
+
+```
+
+### Sunburst Plot
+
+<br>
+
+```{r sunburst, echo=FALSE, warning=FALSE}
+
+Report %>%
+  mutate(
+    `Masterformat 1` = gsub("-", " ", `Masterformat 1`), 
+    `Masterformat 2` = gsub("-", " ", `Masterformat 2`), 
+    `Element` =gsub("-", " ", `Element`),
+    path = paste(`Masterformat 1`, `Masterformat 2`, `Element`, sep="-")) %>%
+  dplyr::select(path, `Realized (kgCO2e)`) %>%
+  sunburst()
+
+```
+
+### EC3 Table
+
+```{r table, echo=FALSE, warning=FALSE}
+
+datatable(Report[, c(4:8, 10:12, 14, 16, 17)],
+              caption = paste0("A full table of elements for ", Project),
+              class = 'cell-border stripe',
+              rownames = FALSE,
+              filter = 'top',
+              options = list(dom = 'tip',
+                             columnDefs = list(list(className = 'dt-left', targets = 0:10)))) %>%
+  formatStyle(columns = c("Element", "Selected Material Name"), fontSize = '75%') %>%
+  formatPercentage(columns = c("Reduction from Baseline"), digits = 1) %>%
+  formatRound(columns = c("Quantity", "Baseline (kgCO2e)", "Realized (kgCO2e)"), digits = 0)
+
+```
