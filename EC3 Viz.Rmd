@@ -44,7 +44,7 @@ library(sunburstR)
 Masterformat_Codes <- read.csv("Data/Masterformat 2 Codes.csv")
 
 # Cleanup function that takes a single report and provides an organized data frame
-File_Path <- paste0("Element Reports/", "WUSM Kienstra Data 5.18.23-elements-report.xlsx")
+File_Path <- paste0("Element Reports/", "00 CLF LA Example-elements-report.xlsx")
 
 # Retrieve project header info (name, level of dev, area, date of report, and data source)
 Project_Info <- c(
