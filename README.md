@@ -1,6 +1,6 @@
 # EC3 Auto Generated Report 
 
-This R markdown script provides an auto generated dashboard from the EC3 elements report export. It includes project info, summary statistics, and insights relevant to decision making and presentation of results. The resulting html report can be found [here](https://edenaxe.github.io/EC3-Report/Exports-and-Images/EC3-Viz.html) for the CLF sample project.
+This R markdown script provides an auto generated dashboard from the EC3 elements report export. It includes project info, summary statistics, and insights relevant to decision making and presentation of results. The resulting html report can be found [here](https://edenaxe.github.io/EC3-Report/Exports%20and%20Images/EC3-Viz.html) for the CLF sample project.
 
 *Figure 1. First tab: project information*  
 <img src="/Exports and Images/project_info.PNG" width="80%" height="80%">
