@@ -12,16 +12,16 @@ output:
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:focus:hover {
-    webkit-box-shadow: inset 0 -2px 0 #4e2751;
-    box-shadow: inset 0 -2px 0 #4e2751;
-    color: #4e2751;
+    webkit-box-shadow: inset 0 -2px 0 #398D93;
+    box-shadow: inset 0 -2px 0 #398D93;
+    color: #398D93;
 }
 
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus,
 .nav-tabs > li > a:focus:hover {
-    box-shadow: inset 0 -2px 0 #8949c5;
-    color: #8949c5;
+    box-shadow: inset 0 -2px 0 #87C1DE;
+    color: #87C1DE;
 }
 
 </style>
@@ -34,7 +34,7 @@ library(readxl)
 library(highcharter)
 library(plotly)
 library(DT)
-library(sunburstR)
+library(knitr)
 
 ```
 
@@ -54,9 +54,6 @@ Project_Info <- c(
 # Create parameters from the area and project name 
 Area <- as.numeric(Project_Info["Area"])
 Project <- Project_Info["EC3 Building Project"]
-
-# LJC Color Palette
-ljc_colors <- c("#9A9795", "#F7CF7A", "#7AB5D1", "#2A378E", "#F04A52", "#F5C4D3", "#79BC5E", "#4E2751")
 
 # Read in and clean the report
 Report <- read_excel(File_Path, sheet = "Sheet2", skip = 4) %>%
@@ -131,7 +128,7 @@ Project_Info <- Project_Info %>%
 Project_Info[3, 1:2] <- c("Area (square feet)", scales::comma(Area))
 
 Project_Info %>%
-  knitr::kable()
+  kable() 
 
 ```
 
@@ -156,7 +153,7 @@ By_Scenario <- Report %>%
 By_Scenario %>%
   ggplot(aes(x = Scenario, y = `Embodied Carbon (mtCO2e)`, fill = Scenario)) +
   geom_col(width = .8) +
-  scale_fill_manual(values = c("#9c9a9a", "#9c9a9a", "#9c9a9a", "#4E2751")) +
+  scale_fill_manual(values = c("#424242", "#9A9795", "#C8C8C8", "#398D93")) +
   scale_y_continuous(labels = scales::comma) +
   scale_x_discrete(labels = c("Realized" = expression(bold(Realized)), parse = TRUE)) +
   geom_segment(aes(x = 0.6, 
@@ -164,7 +161,7 @@ By_Scenario %>%
                    y = By_Scenario$`Embodied Carbon (mtCO2e)`[4], 
                    yend = By_Scenario$`Embodied Carbon (mtCO2e)`[4]),
                linetype = "dashed", 
-               color = "#4E2751") +
+               color = "#D73833") +
   geom_text(aes(x = 1, y = `Embodied Carbon (mtCO2e)`[1], 
                 label = scales::comma(`Embodied Carbon (mtCO2e)`[1])), 
             vjust = -.5, size = 3, fontface = "plain") +
@@ -234,21 +231,19 @@ Plot_Mstfmt1_Comp <- function(Mstfmt) {
     filter(`Masterformat 1` == Mstfmt) %>%
     ggplot(aes(x = Type, y = kgCO2e, fill = Type)) +
     geom_col(width = .7) +
-    scale_fill_manual(values = c("#4E2751", "#8949c5")) +
-    geom_hline(yintercept = baseline,
-               color = "#E2231A",
-               linetype = "dashed",
-               linewidth = 0.75) +
+    scale_fill_manual(values = c("#424242", "#398D93")) +
+    geom_segment(aes(x = 0.65, xend = 2.35, y = baseline, yend = baseline),
+                 linetype = "dashed", linewidth = 0.75, color = "black") +
     {if(realized != baseline)
-    geom_segment(aes(x = 2, 
-                     y = baseline, 
-                     xend = 2, 
-                     yend = realized),
-                 lineend = "round",
-                 linejoin = "bevel",
-                 arrow = arrow(length = unit(0.2, "cm")),
-                 linewidth = 0.5,
-                 color = "black")}+
+      geom_segment(aes(x = 2, 
+                       y = baseline, 
+                       xend = 2, 
+                       yend = realized),
+                   lineend = "round",
+                   linejoin = "bevel",
+                   arrow = arrow(length = unit(0.2, "cm")),
+                   linewidth = 0.5,
+                   color = "black")}+
     scale_y_continuous(labels = scales::comma) +
     labs(title = Mstfmt,
          subtitle = sub_txt,
@@ -273,7 +268,7 @@ Report %>%
   mutate(Change = Realized-Baseline,
          `Percent Change` = scales::percent(Change/Baseline)) %>%
   mutate_if(is.numeric, scales::comma) %>%
-  knitr::kable()
+  kable()
 
 ```
 
@@ -310,7 +305,7 @@ Report %>%
   mutate(Change = Baseline-Realized,
          `Percent Change` = scales::percent(Change/Baseline)) %>%
   mutate_if(is.numeric, scales::comma) %>%
-  knitr::kable()
+  kable()
 
 ```
 
@@ -329,14 +324,16 @@ Report %>%
   mutate(Calculation = factor(Calculation, levels = c("Baseline", "Realized", "Achievable"))) %>%
   ggplot(aes(x = Calculation, y = kgCO2e, fill = Calculation)) +
   geom_col() +
-  scale_fill_manual(values = c("#9c9a9a", "#4E2751", "#b0b0b0")) +
+  scale_fill_manual(values = c("#424242", "#398D93", "#C8C8C8")) +
   scale_y_continuous(labels = scales::label_comma()) +
   scale_x_discrete(guide = guide_axis(angle = 45)) +
   facet_wrap(~Assembly, scales = "free") +
   labs(title = "Realized vs Baseline and Achievable",
        subtitle = "By Assembly",
        x = "") +
-  theme(legend.position = "none")
+    theme_minimal() +
+    theme(panel.grid.major.x = element_blank(),
+          legend.position = "none")
 
 ```
 
@@ -345,6 +342,9 @@ Report %>%
 <br>
 
 ```{r stacked bar, echo=FALSE, warning=FALSE, out.width="100%"}
+
+# LJC Color Palette
+colors <- c("#9A9795", "#EFC143", "#6AB1D5", "#2A378E", "#F04A52", "#F5C4D3", "#4D9A44", "#276168")
 
 # Create a stacked bar chart at 3 levels of detail - total, master 1, and master 2
 stacked_plot <- rbind.data.frame(
@@ -376,8 +376,7 @@ stacked_plot <- rbind.data.frame(
                            scales::percent(`Embodied Carbon (kgCO2e)`/sum(Report$`Realized (kgCO2e)`), 
                                            accuracy = 0.01)))) +
   geom_bar(position = "stack", stat = "identity", color = "white", linewidth = .3) +
-  scale_fill_manual(values = ljc_colors) +
-  #scale_fill_brewer(palette = "Set2") +
+  scale_fill_manual(values = colors) +
   scale_y_continuous(labels = scales::label_comma()) +
   labs(x = "",
        fill = "Division",
@@ -420,8 +419,8 @@ wtrfl_df <- rbind.data.frame(
          Label = fct_reorder(Label, Order),
          Start = ifelse(Label %in% c("Baseline (mtCO2e)", "Realized (mtCO2e)"), 0, Cumulative-Change),
          Color = case_when(
-           Label == "Baseline (mtCO2e)" ~ "#333232",
-           Label == "Realized (mtCO2e)" ~ "#4E2751",
+           Label == "Baseline (mtCO2e)" ~ "#424242",
+           Label == "Realized (mtCO2e)" ~ "#398D93",
            Change < 0 ~ "#33b86f",
            Change > 0 ~ "#c94426"))
 
@@ -449,23 +448,6 @@ wtrfl_df %>%
   coord_flip() +
   theme(legend.position = "none",
         axis.ticks = element_blank())
-
-```
-
-### Sunburst Plot
-
-<br>
-
-```{r sunburst, echo=FALSE, warning=FALSE}
-
-Report %>%
-  mutate(
-    `Masterformat 1` = gsub("-", " ", `Masterformat 1`), 
-    `Masterformat 2` = gsub("-", " ", `Masterformat 2`), 
-    `Element` =gsub("-", " ", `Element`),
-    path = paste(`Masterformat 1`, `Masterformat 2`, `Element`, sep="-")) %>%
-  dplyr::select(path, `Realized (kgCO2e)`) %>%
-  sunburst()
 
 ```
 
