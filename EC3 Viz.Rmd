@@ -449,7 +449,7 @@ stacked_df %>%
 
 <br>
 
-```{r waterfall, echo=FALSE, warning=FALSE, fig.align = 'center'}
+```{r waterfall, echo=FALSE, warning=FALSE, out.width="80%"}
 
 # Create a data frame for the waterfall chart 
 wtrfl_df <- rbind.data.frame(
@@ -502,7 +502,8 @@ wtrfl_df %>%
                            ifelse(wtrfl_df$Change < 0, "#33b86f", "#c94426")),) +
   coord_flip() +
   theme(legend.position = "none",
-        axis.ticks = element_blank())
+        axis.ticks = element_blank(),
+        plot.subtitle = element_text(size = 9, color = "#424242"))
 
 ```
 
