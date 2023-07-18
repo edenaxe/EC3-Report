@@ -341,9 +341,9 @@ Report %>%
 
 <br>
 
-```{r stacked bar, echo=FALSE, warning=FALSE, out.width="100%"}
+```{r stacked bar plotly, include=FALSE, echo=FALSE, warning=FALSE, out.width="100%"}
 
-# LJC Color Palette
+# Color palette
 colors <- c("#9A9795", "#EFC143", "#6AB1D5", "#2A378E", "#F04A52", "#F5C4D3", "#4D9A44", "#276168")
 
 # Create a stacked bar chart at 3 levels of detail - total, master 1, and master 2
@@ -389,6 +389,61 @@ ggplotly(stacked_plot, tooltip = "text") %>%
   config(displayModeBar = FALSE)
 
 ```
+
+```{r stacked bar highcharter, echo=FALSE, warning=FALSE, out.width="100%"}
+
+# Load the hicharter library
+library(highcharter)
+
+# Create a color palette for the bar chart
+colors <- c("#9A9795", "#EFC143", "#6AB1D5", "#2A378E", "#F04A52", "#F5C4D3", "#4D9A44", "#276168")
+
+# create the same df as above but add 2 labels columns for emissions and share of total
+stacked_df <- rbind.data.frame(
+  Report %>%
+    mutate(Group = paste0(substr(`Masterformat Code`, 1, 2), " ", `Masterformat 1`, ": ", `Masterformat 2`)) %>%
+    group_by(Group) %>%
+    summarize(`Embodied Carbon (kgCO2e)` = sum(`Realized (kgCO2e)`)) %>%
+    mutate(Level = "Masterformat 2"),
+  Report %>%
+    mutate(Group = paste(substr(`Masterformat Code`, 1, 2), `Masterformat 1`)) %>%
+    group_by(Group) %>%
+    summarize(`Embodied Carbon (kgCO2e)` = sum(`Realized (kgCO2e)`)) %>%
+    mutate(Level = "Masterformat 1"),
+  data.frame(
+    Group = "Total",
+    Value = sum(Report$`Realized (kgCO2e)`),
+    Level = "Total") %>%
+    rename("Group" = Group, "Embodied Carbon (kgCO2e)" = Value, "Level" = Level)) %>%
+  mutate(Level = factor(Level, levels = c("Total", "Masterformat 1", "Masterformat 2")),
+         fill_grp = case_when(
+           Level == "Total" ~ "Total",
+           Level == "Masterformat 1" ~ Group,
+           Level == "Masterformat 2" ~ sub(":.*", "", Group)),
+         EC_label = scales::comma(`Embodied Carbon (kgCO2e)`),
+         pct_label = scales::percent(`Embodied Carbon (kgCO2e)`/sum(Report$`Realized (kgCO2e)`), 
+                                           accuracy = 0.01))
+
+# Create the chart, identical to the previous plotly one
+stacked_df %>%
+  hchart(type = 'column', 
+         stacking = 'normal',
+         hcaes(x = Level, y = `Embodied Carbon (kgCO2e)`, group = fill_grp)) %>%
+  hc_legend(align = "right", verticalAlign = "middle", layout = "vertical") %>%
+  hc_colors(colors = colors) %>%
+  hc_title(text = "Embodied Carbon by Level",
+           style = list(fontWeight = "bold")) %>% 
+  hc_subtitle(text = "A breakdown of embodied carbon by masterformat level 1 and 2") %>%
+  hc_xAxis(title = "", categories = levels(stacked_df$Level)) %>%
+  hc_tooltip(valueDecimals = 0,
+             pointFormat = "<b>{point.Group}</b> <br> 
+             Emissions (kgCO2e): {point.EC_label} <br> 
+             Share of Total: {point.pct_label}") %>%
+  hc_add_theme(hc_theme_smpl())
+
+```
+
+
 
 ### Waterfall Chart
 
